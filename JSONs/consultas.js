@@ -1,11 +1,11 @@
 use('torneo_futbol');
 /*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 //1. Consultar la plantilla (jugadores) de los equipos en cada edición de los torneos.
-db.equipos.aggregate([      
+db.plantillas.aggregate([      
     {$project:{
-            "nombre_eq": 1,
-            "plantilla.edicion_torneo": 1,
-            "plantilla.jugadores": 1
+            "nombre_equipo": 1,
+            "edicion_torneo": 1,
+            "jugadores": 1
         }
     }
 ]).pretty();
@@ -14,7 +14,7 @@ db.equipos.aggregate([
 //2. Clasificación final en cada grupo.
 torneo = 'Liga de Campeones 2020';
 db.torneo.aggregate([
-    { $match: { 'ediciones.nombre_e':torneo}},
+    { $match: { 'edicion':torneo}},
     { $group: { _id: "$ediciones"}
     }
 ]).pretty();
@@ -93,7 +93,7 @@ db.partidos.aggregate([
 
 
 
-// De esta forma se buscó la infromación para llenar las tablas de resultados
+// De esta forma se buscó la información para llenar las tablas de resultados
 /* equipo_buscar = "Atlético de Madrid ";
 equipo_buscar = "Barcelona";
 equipo_buscar = "Bayern de Múnich";
