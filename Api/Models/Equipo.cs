@@ -11,10 +11,10 @@ namespace Api.Models
     {
         [BsonId]
         public ObjectId Id { get; set; }
-        //5555
+        
         public string Name { get; set; }
         
-        public string Edad { get; set; }
+        public int Edad { get; set; }
         
 
     }

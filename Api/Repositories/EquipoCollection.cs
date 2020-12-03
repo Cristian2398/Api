@@ -1,4 +1,5 @@
 ﻿using Api.Models;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -13,31 +14,37 @@ namespace Api.Repositories
         private IMongoCollection<Equipo> Collection;
         public EquipoCollection()
         {
+            //Va a traer los datos de la colleccion y los va a guardar en coleccion para interactuar con ella
             Collection = _repository.db.GetCollection<Equipo>("Equipos");
+
         }
-        public Task DeleteEquipo(string id)
+        public async Task DeleteEquipo(string id)
         {
-            throw new NotImplementedException();
+            //creamos el filtro, luego le pedimos a la coleccion que borre uno
+            var filter = Builders<Equipo>.Filter.Eq(s => s.Id, new ObjectId(id));
+            await Collection.DeleteOneAsync(filter);
         }
 
-        public Task<List<Equipo>> GetAllEquipos()
+        public async Task<List<Equipo>> GetAllEquipos()
         {
-            throw new NotImplementedException();
+
+            return await Collection.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
 
-        public Task<Equipo> GetEquipoById(string id)
+        public async Task<Equipo> GetEquipoById(string id)
         {
-            throw new NotImplementedException();
+            return await Collection.FindAsync(new BsonDocument { { "_id", new ObjectId(id) } }).Result.FirstAsync();
         }
 
-        public Task InsertEquipo(Equipo equipo)
+        public async Task InsertEquipo(Equipo equipo)
         {
-            throw new NotImplementedException();
+            await Collection.InsertOneAsync(equipo);
         }
 
-        public Task UpdateEquipo(Equipo equipo)
+        public async Task UpdateEquipo(Equipo equipo)
         {
-            throw new NotImplementedException();
+            var filter = Builders<Equipo>.Filter.Eq(s => s.Id, equipo.Id);
+            await Collection.ReplaceOneAsync(filter, equipo);
         }
     }
 }
