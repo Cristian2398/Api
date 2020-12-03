@@ -1,4 +1,5 @@
 ﻿using Api.Models;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,12 @@ namespace Api.Repositories
 {
     public class EquipoCollection : IEquiposCollections
     {
+        internal MongoRepository _repository = new MongoRepository();
+        private IMongoCollection<Equipo> Collection;
+        public EquipoCollection()
+        {
+            Collection = _repository.db.GetCollection<Equipo>("Equipos");
+        }
         public Task DeleteEquipo(string id)
         {
             throw new NotImplementedException();
