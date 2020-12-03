@@ -51,7 +51,7 @@ namespace Api.Controllers
                 ModelState.AddModelError("Name", "El equipo no esta");
 
             }
-            equipo.Id = new MongoDB.Bson.ObjectId(id);
+ 
             await db.InsertEquipo(equipo);
             return Created("created", true);
         }
