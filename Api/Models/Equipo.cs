@@ -11,7 +11,7 @@ namespace Api.Models
     {
         [BsonId]
         public ObjectId Id { get; set; }
-
+        //55
         public string Name { get; set; }
         
         public string Edad { get; set; }
