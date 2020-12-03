@@ -13,7 +13,7 @@ namespace Api.Controllers
     [ApiController]
     public class EquipoController : Controller
     {
-        private IEquiposCollections db=new EquipoCollection();
+        private IEquiposCollections db = new EquipoCollection();
         public async Task<IActionResult> GetAllEquipos()
         {
             return Ok(await db.GetAllEquipos());
@@ -37,7 +37,7 @@ namespace Api.Controllers
 
             }
             await db.InsertEquipo(equipo);
-            return Created("created",true);
+            return Created("created", true);
         }
 
         [HttpPut("{id}")]
@@ -51,11 +51,11 @@ namespace Api.Controllers
                 ModelState.AddModelError("Name", "El equipo no esta");
 
             }
- 
-            await db.InsertEquipo(equipo);
+            equipo.Id = new MongoDB.Bson.ObjectId(id);
+            await db.UpdateEquipo(equipo);
             return Created("created", true);
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult>DeleteEquipo(string id)
         {
             await db.DeleteEquipo(id);
