@@ -9,6 +9,7 @@ namespace Api.Models
 {
     public class Equipo
     {
+
         [BsonId]
         public ObjectId Id { get; set; }
         
