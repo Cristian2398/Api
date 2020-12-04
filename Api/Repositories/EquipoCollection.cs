@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Api.Repositories
 {
@@ -15,7 +17,7 @@ namespace Api.Repositories
         public EquipoCollection()
         {
             //Va a traer los datos de la colleccion y los va a guardar en coleccion para interactuar con ella
-            Collection = _repository.db.GetCollection<Equipo>("Equipos");
+            Collection = _repository.db.GetCollection<Equipo>("equipos");
 
         }
         public async Task DeleteEquipo(string id)
@@ -27,9 +29,10 @@ namespace Api.Repositories
 
         public async Task<List<Equipo>> GetAllEquipos()
         {
-
+            
             return await Collection.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
+       
 
         public async Task<Equipo> GetEquipoById(string id)
         {

@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Api.Controllers
 {
@@ -31,7 +33,7 @@ namespace Api.Controllers
             if (equipo == null)
                 return BadRequest();
 
-            if (equipo.Name == string.Empty)
+            if (equipo.nombre_eq == string.Empty)
             {
                 ModelState.AddModelError("Name", "El equipo no esta");
 
@@ -46,7 +48,7 @@ namespace Api.Controllers
             if (equipo == null)
                 return BadRequest();
 
-            if (equipo.Name == string.Empty)
+            if (equipo.nombre_eq == string.Empty)
             {
                 ModelState.AddModelError("Name", "El equipo no esta");
 
