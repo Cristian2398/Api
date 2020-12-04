@@ -207,84 +207,84 @@ db.equipos.insertMany(
         "entrenador": "Diego Simeone",
         "sitio_web": "atleticodemadrid.com",
         "email": "atletic@email.com",
-        "fundacion": "fundado el 26 de abril de 1903"
+        "fundado": "fundado el 26 de abril de 1903"
       },
       {
         "nombre_eq": "Barcelona",
         "entrenador": "Ronald Koeman",
         "sitio_web": "fcbarcelona.es",
         "email": "clubbarcelona@email.com",
-        "fundacion": "29 de noviembre de 1899"
+        "fundado": "29 de noviembre de 1899"
       },
       {
         "nombre_eq": "Bayern de Múnich",
         "entrenador": "Hans-Dieter Flick",
         "sitio_web": "fcbayern.com",
         "email": "clubbayer@email.com",
-        "fundacion": "27 de febrero de 1900"
+        "fundado": "27 de febrero de 1900"
       },
       {
         "nombre_eq": "Chelsea",
         "entrenador": "Frank Lampard",
         "sitio_web": "chelseafc.com",
         "email": "clubchelsea@email.com",
-        "fundacion": "10 de marzo de 1905"
+        "fundado": "10 de marzo de 1905"
       },
       {
         "nombre_eq": "Liverpool",
         "entrenador": "Jurgen Klop",
         "sitio_web": "liverpoolfc.com",
         "email": "liverpoll@email.com",
-        "fundacion": "6 de junio de 1892"
+        "fundado": "6 de junio de 1892"
       },
       {
         "nombre_eq": "Manchester City",
         "entrenador": "Pep Guardiola",
         "sitio_web": "es.mancity.com",
         "email": "manchestercity@email.com",
-        "fundacion": "23 de noviembre de 1880"
+        "fundado": "23 de noviembre de 1880"
       },
       {
         "nombre_eq": "Manchester United",
         "entrenador": "Ole Gunnar",
         "sitio_web": "manchesterunitedfc.com",
         "email": "manchesterunited@email.com",
-        "fundacion": "5 de marzo de 1878"
+        "fundado": "5 de marzo de 1878"
       },
       {
         "nombre_eq": "Nápoles",
         "entrenador": "Gennaro Gattuso",
         "sitio_web": "clubdeportivonapoles.com",
         "email": "clubnapoles@email.com",
-        "fundacion": "1926"
+        "fundado": "1926"
       },
       {
         "nombre_eq": "Piemonte Calcio",
         "entrenador": "Andrea Pirlo",
         "sitio_web": "juventus.com",
         "email": "juventus@email.com",
-        "fundacion": "1 de noviembre de 1897"
+        "fundado": "1 de noviembre de 1897"
       },
       {
         "nombre_eq": "PSG",
         "entrenador": "Tomas Tuchel",
         "sitio_web": "es.psg.fr",
         "email": "psg@email.com",
-        "fundacion": "12 de agosto de 1970"
+        "fundado": "12 de agosto de 1970"
       },
       {
         "nombre_eq": "Real Madrid",
         "entrenador": "Zinedine Zidane",
         "sitio_web": "realmadrid.com",
         "email": "realmadrid@email.com",
-        "fundacion": "6 de marzo de 1902"
+        "fundado": "6 de marzo de 1902"
       },
       {
         "nombre_eq": "Tottenham",
         "entrenador": "José Mourinho",
         "sitio_web": "tottenhamhospur.com",
         "email": "@email.com",
-        "fundacion": "5 de septiembre de 1882"
+        "fundado": "5 de septiembre de 1882"
       }
   ]
 );
@@ -1002,49 +1002,49 @@ db.estadios.insertMany(
         "ubicacion": "Munich, Alemania",       
         "aforo": 31297,
         "sitio_web": "fcbayern.com",
-        "fundacion": "30 de mayo de 2005"
+        "fundado": "30 de mayo de 2005"
       },
       {
         "nombre": "Gillette Stadium",
         "ubicacion": "Foxborough, Estados Unidos",
         "aforo": 68756,
         "sitio_web": "stadiumgillette.com",
-        "fundacion": "9 de septiembre de 2002"
+        "fundado": "9 de septiembre de 2002"
       },
       {
         "nombre": "Estadio Olímpico de Atenas",
         "ubicacion": "Atenas, Grecia",
         "aforo": 39088,
         "sitio_web": "estadiumatenas.com",
-        "fundacion": "30 de julio de 2004"
+        "fundado": "30 de julio de 2004"
       },
       {
         "nombre": "Estadio Olímpico de Múnich",
         "ubicacion": "Munich, alemania",
         "aforo": 63062,
         "sitio_web": "estadiumolimpicomunich.com",
-        "fundacion": "26 de mayo de 1972"
+        "fundado": "26 de mayo de 1972"
       },
       {
         "nombre": "Estadio Krestovski",
         "ubicacion": "San Petersburgo, Rusia",
         "aforo": 70000,
         "sitio_web": "estadiumKrestovski.com",
-        "fundacion": "22 de abril de 2017"
+        "fundado": "22 de abril de 2017"
       },
       {
         "nombre": "Estadio Santiago Bernabéu",
         "ubicacion": "Madrid, España",
         "aforo": 81044,
         "sitio_web": "estadiumbernabeu.com",
-        "fundacion": "14 de diciembre de 1947"
+        "fundado": "14 de diciembre de 1947"
       },
       {
         "nombre": "Estadio Camp Nou",
         "ubicacion": "Barcelona, España",
         "aforo": 99354,
         "sitio_web": "estadiumcampnou.com",
-        "fundacion": "24 de septiembre de 1957"
+        "fundado": "24 de septiembre de 1957"
       }
   ]
 );
