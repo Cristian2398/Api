@@ -1,223 +1,197 @@
-/*--------------------INSERTAR LOS EQUIPOS--------------------- */
+/*--------------------INSERTAR LOS PLANTILLA--------------------- */
 /*------------------------------------------------------------- */
 
-db.equipos.insertMany(
+db.plantilla.insertMany(
 [
-    {
+  {
+    "_id:": new ObjectId(),
     "nombre_eq": "Atlético de Madrid ",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Oblak", "n_camiseta": 1, "altura": 185, "edad": 25 },
-                {  "nombre": "N'Golo Kanté", "n_camiseta": 18, "altura": 177, "edad": 29 },
-                {  "nombre": "Eriksen", "n_camiseta": 30, "altura": 178, "edad": 29 },
-                {  "nombre": "Jordi Alba", "n_camiseta": 42, "altura": 176, "edad": 19 },
-                {  "nombre": "Jan Vertonghen", "n_camiseta": 54, "altura": 191, "edad": 27 },
-                {  "nombre": "Milan Škriniar", "n_camiseta": 66, "altura": 187, "edad": 36 },
-                {  "nombre": "Varane", "n_camiseta": 78, "altura": 200, "edad": 33 }
-
-            ]
-        }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "a",
+    "jugadores": [
+        {  "nombre": "Oblak", "n_camiseta": 1, "altura": 185, "edad": 25 },
+        {  "nombre": "N'Golo Kanté", "n_camiseta": 18, "altura": 177, "edad": 29 },
+        {  "nombre": "Eriksen", "n_camiseta": 30, "altura": 178, "edad": 29 },
+        {  "nombre": "Jordi Alba", "n_camiseta": 42, "altura": 176, "edad": 19 },
+        {  "nombre": "Jan Vertonghen", "n_camiseta": 54, "altura": 191, "edad": 27 },
+        {  "nombre": "Milan Škriniar", "n_camiseta": 66, "altura": 187, "edad": 36 },
+        {  "nombre": "Varane", "n_camiseta": 78, "altura": 200, "edad": 33 }
     ]
-},{
+  },{
+    "_id:": new ObjectId(),
     "nombre_eq": "Barcelona",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Messi", "n_camiseta": 1, "altura": 178, "edad": 35 },
-                {  "nombre": "Sergio Agüero", "n_camiseta": 13, "altura": 174, "edad": 41 },
-                {  "nombre": "Aubameyang", "n_camiseta": 25, "altura": 197, "edad": 29 },
-                {  "nombre": "Godín", "n_camiseta": 37, "altura": 174, "edad": 41 },
-                {  "nombre": "Aymeric Laporte", "n_camiseta": 49, "altura": 186, "edad": 23 },
-                {  "nombre": "Marquinhos", "n_camiseta": 61, "altura": 183, "edad": 27 },
-                {  "nombre": "Daniel Parejo", "n_camiseta": 73, "altura": 198, "edad": 31 }
-
-            ]
-        }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "a",
+    "jugadores": [
+        {  "nombre": "Messi", "n_camiseta": 1, "altura": 178, "edad": 35 },
+        {  "nombre": "Sergio Agüero", "n_camiseta": 13, "altura": 174, "edad": 41 },
+        {  "nombre": "Aubameyang", "n_camiseta": 25, "altura": 197, "edad": 29 },
+        {  "nombre": "Godín", "n_camiseta": 37, "altura": 174, "edad": 41 },
+        {  "nombre": "Aymeric Laporte", "n_camiseta": 49, "altura": 186, "edad": 23 },
+        {  "nombre": "Marquinhos", "n_camiseta": 61, "altura": 183, "edad": 27 },
+        {  "nombre": "Daniel Parejo", "n_camiseta": 73, "altura": 198, "edad": 31 }
     ]
 },{
+    "_id:": new ObjectId(),
     "nombre_eq": "Bayern de Múnich",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Mohamed Salah ", "n_camiseta": 1, "altura": 181, "edad": 39 },
-                {  "nombre": "Griezmann", "n_camiseta": 20, "altura": 182, "edad":28 },
-                {  "nombre": "Cavani", "n_camiseta": 32, "altura": 187, "edad": 37 },
-                {  "nombre": "Fernandinho", "n_camiseta": 44, "altura": 184, "edad": 26 },
-                {  "nombre": "Joshua Kimmich", "n_camiseta": 56, "altura": 181, "edad": 23 },
-                {  "nombre": "Thomas Müller", "n_camiseta": 68, "altura": 186, "edad": 26 },
-                {  "nombre": "Axel Witsel", "n_camiseta": 80, "altura": 183, "edad": 27 }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "a",
+    "jugadores": [
+        {  "nombre": "Mohamed Salah ", "n_camiseta": 1, "altura": 181, "edad": 39 },
+        {  "nombre": "Griezmann", "n_camiseta": 20, "altura": 182, "edad":28 },
+        {  "nombre": "Cavani", "n_camiseta": 32, "altura": 187, "edad": 37 },
+        {  "nombre": "Fernandinho", "n_camiseta": 44, "altura": 184, "edad": 26 },
+        {  "nombre": "Joshua Kimmich", "n_camiseta": 56, "altura": 181, "edad": 23 },
+        {  "nombre": "Thomas Müller", "n_camiseta": 68, "altura": 186, "edad": 26 },
+        {  "nombre": "Axel Witsel", "n_camiseta": 80, "altura": 183, "edad": 27 }
 
-            ]
-        }
     ]
 },{
+    "_id:": new ObjectId(),
     "nombre_eq": "Chelsea",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Mbappé", "n_camiseta": 1, "altura": 192, "edad": 19 },
-                {  "nombre": "De Gea", "n_camiseta": 23, "altura": 197, "edad":29 },
-                {  "nombre": "David Silva", "n_camiseta": 35, "altura": 193, "edad": 27 },
-                {  "nombre": "Bernardo Silva", "n_camiseta": 47, "altura": 181, "edad": 38 },
-                {  "nombre": "Di María", "n_camiseta": 59, "altura": 192, "edad": 31 },
-                {  "nombre": "Isco", "n_camiseta": 71, "altura": 182, "edad": 24 },
-                {  "nombre": "Alex Sandro", "n_camiseta": 83, "altura": 18, "edad": 30 }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "a",
+    "jugadores": [
+        {  "nombre": "Mbappé", "n_camiseta": 1, "altura": 192, "edad": 19 },
+        {  "nombre": "De Gea", "n_camiseta": 23, "altura": 197, "edad":29 },
+        {  "nombre": "David Silva", "n_camiseta": 35, "altura": 193, "edad": 27 },
+        {  "nombre": "Bernardo Silva", "n_camiseta": 47, "altura": 181, "edad": 38 },
+        {  "nombre": "Di María", "n_camiseta": 59, "altura": 192, "edad": 31 },
+        {  "nombre": "Isco", "n_camiseta": 71, "altura": 182, "edad": 24 },
+        {  "nombre": "Alex Sandro", "n_camiseta": 83, "altura": 18, "edad": 30 }
 
-            ]
-        }
     ]
 },{
+    "_id:": new ObjectId(),
     "nombre_eq": "Liverpool",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Van Dijk", "n_camiseta": 1, "altura": 198, "edad": 29 },
-                {  "nombre": "Alisson", "n_camiseta": 19, "altura": 196, "edad":35 },
-                {  "nombre": "Pogba", "n_camiseta": 31, "altura": 197, "edad": 27 },
-                {  "nombre": "Mats Hummels", "n_camiseta": 43, "altura": 193, "edad": 21 },
-                {  "nombre": "Keylor Navas", "n_camiseta": 55, "altura": 191, "edad": 40 },
-                {  "nombre": "Samuel Umtit", "n_camiseta": 67, "altura": 177, "edad": 28 },
-                {  "nombre": "Andrew Robertson", "n_camiseta": 79, "altura": 168, "edad": 31 }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "b",
+    "jugadores": [
+        {  "nombre": "Van Dijk", "n_camiseta": 1, "altura": 198, "edad": 29 },
+        {  "nombre": "Alisson", "n_camiseta": 19, "altura": 196, "edad":35 },
+        {  "nombre": "Pogba", "n_camiseta": 31, "altura": 197, "edad": 27 },
+        {  "nombre": "Mats Hummels", "n_camiseta": 43, "altura": 193, "edad": 21 },
+        {  "nombre": "Keylor Navas", "n_camiseta": 55, "altura": 191, "edad": 40 },
+        {  "nombre": "Samuel Umtit", "n_camiseta": 67, "altura": 177, "edad": 28 },
+        {  "nombre": "Andrew Robertson", "n_camiseta": 79, "altura": 168, "edad": 31 }
 
-            ]
-        }
     ]
 },{
+    "_id:": new ObjectId(),
     "nombre_eq": "Manchester City",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Kevin de Bruyne", "n_camiseta": 1, "altura": 186, "edad": 37 },
-                {  "nombre": "Kalidou Koulibaly", "n_camiseta": 17, "altura": 176, "edad":33 },
-                {  "nombre": "Kroos", "n_camiseta": 29, "altura": 191, "edad": 30 },
-                {  "nombre": "Benzema", "n_camiseta": 41, "altura": 170, "edad": 41 },
-                {  "nombre": "Lorenzo Insigne", "n_camiseta": 53, "altura": 185, "edad": 21 },
-                {  "nombre": "Rakitić", "n_camiseta": 65, "altura": 186, "edad": 39 },
-                {  "nombre": "Frenkie de Jong", "n_camiseta": 77, "altura": 173, "edad": 25 }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "b",
+    "jugadores": [
+        {  "nombre": "Kevin de Bruyne", "n_camiseta": 1, "altura": 186, "edad": 37 },
+        {  "nombre": "Kalidou Koulibaly", "n_camiseta": 17, "altura": 176, "edad":33 },
+        {  "nombre": "Kroos", "n_camiseta": 29, "altura": 191, "edad": 30 },
+        {  "nombre": "Benzema", "n_camiseta": 41, "altura": 170, "edad": 41 },
+        {  "nombre": "Lorenzo Insigne", "n_camiseta": 53, "altura": 185, "edad": 21 },
+        {  "nombre": "Rakitić", "n_camiseta": 65, "altura": 186, "edad": 39 },
+        {  "nombre": "Frenkie de Jong", "n_camiseta": 77, "altura": 173, "edad": 25 }
 
-            ]
-        }
     ]
 },{
+    "_id:": new ObjectId(),
     "nombre_eq": "Manchester United",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Sergio Ramos", "n_camiseta": 1, "altura": 178, "edad": 40 },
-                {  "nombre": "Raheem Sterling", "n_camiseta": 24, "altura": 197, "edad":32 },
-                {  "nombre": "Hugo Lloris", "n_camiseta": 36, "altura": 175, "edad": 22 },
-                {  "nombre": "Thiago", "n_camiseta": 48, "altura": 179, "edad": 25 },
-                {  "nombre": "Alexandre Lacazette", "n_camiseta": 60, "altura": 191, "edad": 36 },
-                {  "nombre": "Wojciech Szczęsny", "n_camiseta": 72, "altura": 196, "edad": 35 },
-                {  "nombre": "Niklas Süle", "n_camiseta": 84, "altura": 184, "edad": 32 }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "b",
+    "jugadores": [
+        {  "nombre": "Sergio Ramos", "n_camiseta": 1, "altura": 178, "edad": 40 },
+        {  "nombre": "Raheem Sterling", "n_camiseta": 24, "altura": 197, "edad":32 },
+        {  "nombre": "Hugo Lloris", "n_camiseta": 36, "altura": 175, "edad": 22 },
+        {  "nombre": "Thiago", "n_camiseta": 48, "altura": 179, "edad": 25 },
+        {  "nombre": "Alexandre Lacazette", "n_camiseta": 60, "altura": 191, "edad": 36 },
+        {  "nombre": "Wojciech Szczęsny", "n_camiseta": 72, "altura": 196, "edad": 35 },
+        {  "nombre": "Niklas Süle", "n_camiseta": 84, "altura": 184, "edad": 32 }
 
-            ]
-        }
     ]
 },{
+    "_id:": new ObjectId(),
     "nombre_eq": "Nápoles",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Ter Stegen", "n_camiseta": 10, "altura": 172, "edad": 39 },
-                {  "nombre": "Luis Suárez", "n_camiseta": 22, "altura": 184, "edad":18 },
-                {  "nombre": "Ederson", "n_camiseta": 34, "altura": 175, "edad": 41 },
-                {  "nombre": "Toby Alderweireld", "n_camiseta": 46, "altura": 192, "edad": 32 },
-                {  "nombre": "Pjanić", "n_camiseta": 58, "altura": 179, "edad": 32 },
-                {  "nombre": "Ciro Immobile", "n_camiseta": 70, "altura": 175, "edad": 39 },
-                {  "nombre": "Fabinho", "n_camiseta": 82, "altura": 184, "edad": 28 }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "b",
+    "jugadores": [
+        {  "nombre": "Ter Stegen", "n_camiseta": 10, "altura": 172, "edad": 39 },
+        {  "nombre": "Luis Suárez", "n_camiseta": 22, "altura": 184, "edad":18 },
+        {  "nombre": "Ederson", "n_camiseta": 34, "altura": 175, "edad": 41 },
+        {  "nombre": "Toby Alderweireld", "n_camiseta": 46, "altura": 192, "edad": 32 },
+        {  "nombre": "Pjanić", "n_camiseta": 58, "altura": 179, "edad": 32 },
+        {  "nombre": "Ciro Immobile", "n_camiseta": 70, "altura": 175, "edad": 39 },
+        {  "nombre": "Fabinho", "n_camiseta": 82, "altura": 184, "edad": 28 }
 
-            ]
-        }
     ]
 }, {
+    "_id:": new ObjectId(),
     "nombre_eq": "Piemonte Calcio",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Cristiano Ronaldo", "n_camiseta": 1, "altura": 183, "edad": 39 },
-                {  "nombre": "Chiellini", "n_camiseta": 14, "altura": 200, "edad": 22 },
-                {  "nombre": "Gerard Piqué", "n_camiseta": 26, "altura": 172, "edad": 23 },
-                {  "nombre": "Dybala", "n_camiseta": 38, "altura": 182, "edad": 35 },
-                {  "nombre": "Dries Mertens", "n_camiseta": 50, "altura": 168, "edad": 27 },
-                {  "nombre": "Firmino", "n_camiseta": 62, "altura": 169, "edad": 41 },
-                {  "nombre": "Marcelo", "n_camiseta": 74, "altura": 171, "edad": 22 }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "c",
+    "jugadores": [
+        {  "nombre": "Cristiano Ronaldo", "n_camiseta": 1, "altura": 183, "edad": 39 },
+        {  "nombre": "Chiellini", "n_camiseta": 14, "altura": 200, "edad": 22 },
+        {  "nombre": "Gerard Piqué", "n_camiseta": 26, "altura": 172, "edad": 23 },
+        {  "nombre": "Dybala", "n_camiseta": 38, "altura": 182, "edad": 35 },
+        {  "nombre": "Dries Mertens", "n_camiseta": 50, "altura": 168, "edad": 27 },
+        {  "nombre": "Firmino", "n_camiseta": 62, "altura": 169, "edad": 41 },
+        {  "nombre": "Marcelo", "n_camiseta": 74, "altura": 171, "edad": 22 }
 
-            ]
-        }
     ]
 },{
+    "_id:": new ObjectId(),
     "nombre_eq": "PSG",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Neymar Jr", "n_camiseta": 3, "altura": 189, "edad": 19 },
-                {  "nombre": "Lewandowski", "n_camiseta": 15, "altura": 200, "edad": 41 },
-                {  "nombre": "Neuer", "n_camiseta": 27, "altura": 190, "edad": 40 },
-                {  "nombre": "Courtois", "n_camiseta": 39, "altura": 189, "edad": 33 },
-                {  "nombre": "Thiago Silva", "n_camiseta": 51, "altura": 191, "edad": 36 },
-                {  "nombre": "Marco Verratti", "n_camiseta": 63, "altura": 196, "edad": 20 },
-                {  "nombre": "Gianluigi Donnarumma", "n_camiseta": 75, "altura": 186, "edad": 20 }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "c",
+    "jugadores": [
+        {  "nombre": "Neymar Jr", "n_camiseta": 3, "altura": 189, "edad": 19 },
+        {  "nombre": "Lewandowski", "n_camiseta": 15, "altura": 200, "edad": 41 },
+        {  "nombre": "Neuer", "n_camiseta": 27, "altura": 190, "edad": 40 },
+        {  "nombre": "Courtois", "n_camiseta": 39, "altura": 189, "edad": 33 },
+        {  "nombre": "Thiago Silva", "n_camiseta": 51, "altura": 191, "edad": 36 },
+        {  "nombre": "Marco Verratti", "n_camiseta": 63, "altura": 196, "edad": 20 },
+        {  "nombre": "Gianluigi Donnarumma", "n_camiseta": 75, "altura": 186, "edad": 20 }
 
-            ]
-        }
     ]
 },{
+    "_id:": new ObjectId(),
     "nombre_eq": "Real Madrid",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Hazard", "n_camiseta": 1, "altura": 200, "edad": 40 },
-                {  "nombre": "Kane", "n_camiseta": 16, "altura": 182, "edad": 27 },
-                {  "nombre": "Mané", "n_camiseta": 28, "altura": 186, "edad": 25 },
-                {  "nombre": "Samir Handanovič", "n_camiseta": 40, "altura": 186, "edad": 25 },
-                {  "nombre": "Casemiro", "n_camiseta": 52, "altura": 171, "edad": 18 },
-                {  "nombre": "Leonardo Bonucci", "n_camiseta": 64, "altura": 180, "edad": 27 },
-                {  "nombre": "James Rodríguez", "n_camiseta": 76, "altura": 196, "edad": 31 }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "c",
+    "jugadores": [
+        {  "nombre": "Hazard", "n_camiseta": 1, "altura": 200, "edad": 40 },
+        {  "nombre": "Kane", "n_camiseta": 16, "altura": 182, "edad": 27 },
+        {  "nombre": "Mané", "n_camiseta": 28, "altura": 186, "edad": 25 },
+        {  "nombre": "Samir Handanovič", "n_camiseta": 40, "altura": 186, "edad": 25 },
+        {  "nombre": "Casemiro", "n_camiseta": 52, "altura": 171, "edad": 18 },
+        {  "nombre": "Leonardo Bonucci", "n_camiseta": 64, "altura": 180, "edad": 27 },
+        {  "nombre": "James Rodríguez", "n_camiseta": 76, "altura": 196, "edad": 31 }
 
-            ]
-        }
     ]
 }, {
+    "_id:": new ObjectId(),
     "nombre_eq": "Tottenham",
-    "plantilla": [
-        {
-            "edicion_torneo": "Liga de Campeones 2020",
-            "_id:": new ObjectId(),
-            "jugadores": [
-                {  "nombre": "Modrić", "n_camiseta": 1, "altura": 286, "edad": 37 },
-                {  "nombre": "Sergio Busquets", "n_camiseta": 21, "altura": 176, "edad": 27 },
-                {  "nombre": "Marco Reus", "n_camiseta": 33, "altura": 194, "edad": 39 },
-                {  "nombre": "Heung Min Son", "n_camiseta": 45, "altura": 176, "edad": 39 },
-                {  "nombre": "Leroy Sané", "n_camiseta": 57, "altura": 193, "edad": 40 },
-                {  "nombre": "Coutinho", "n_camiseta": 69, "altura": 178, "edad": 21 },
-                {  "nombre": "De Ligt", "n_camiseta": 81, "altura": 170, "edad": 20 }
+    "edicion_torneo": "Liga de Campeones 2020",
+    "fase": "clasificacion_grupos",
+    "grupo": "c",
+    "jugadores": [
+        {  "nombre": "Modrić", "n_camiseta": 1, "altura": 286, "edad": 37 },
+        {  "nombre": "Sergio Busquets", "n_camiseta": 21, "altura": 176, "edad": 27 },
+        {  "nombre": "Marco Reus", "n_camiseta": 33, "altura": 194, "edad": 39 },
+        {  "nombre": "Heung Min Son", "n_camiseta": 45, "altura": 176, "edad": 39 },
+        {  "nombre": "Leroy Sané", "n_camiseta": 57, "altura": 193, "edad": 40 },
+        {  "nombre": "Coutinho", "n_camiseta": 69, "altura": 178, "edad": 21 },
+        {  "nombre": "De Ligt", "n_camiseta": 81, "altura": 170, "edad": 20 }
 
-            ]
-        }
     ]
 }
 ]
@@ -231,86 +205,86 @@ db.equipos.insertMany(
       {
         "nombre_eq": "Atlético de Madrid ",
         "entrenador": "Diego Simeone",
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "sitio_web": "atleticodemadrid.com",
+        "email": "atletic@email.com",
+        "fundacion": "fundado el 26 de abril de 1903"
       },
       {
         "nombre_eq": "Barcelona",
-        "entrenador": "",
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "entrenador": "Ronald Koeman",
+        "sitio_web": "fcbarcelona.es",
+        "email": "clubbarcelona@email.com",
+        "fundacion": "29 de noviembre de 1899"
       },
       {
         "nombre_eq": "Bayern de Múnich",
-        "entrenador": ,
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "entrenador": "Hans-Dieter Flick",
+        "sitio_web": "fcbayern.com",
+        "email": "clubbayer@email.com",
+        "fundacion": "27 de febrero de 1900"
       },
       {
         "nombre_eq": "Chelsea",
         "entrenador": "Frank Lampard",
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "sitio_web": "chelseafc.com",
+        "email": "clubchelsea@email.com",
+        "fundacion": "10 de marzo de 1905"
       },
       {
         "nombre_eq": "Liverpool",
-        "entrenador": "",
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "entrenador": "Jurgen Klop",
+        "sitio_web": "liverpoolfc.com",
+        "email": "liverpoll@email.com",
+        "fundacion": "6 de junio de 1892"
       },
       {
         "nombre_eq": "Manchester City",
         "entrenador": "Pep Guardiola",
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "sitio_web": "es.mancity.com",
+        "email": "manchestercity@email.com",
+        "fundacion": "23 de noviembre de 1880"
       },
       {
         "nombre_eq": "Manchester United",
-        "entrenador": ,
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "entrenador": "Ole Gunnar",
+        "sitio_web": "manchesterunitedfc.com",
+        "email": "manchesterunited@email.com",
+        "fundacion": "5 de marzo de 1878"
       },
       {
         "nombre_eq": "Nápoles",
-        "entrenador": ,
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "entrenador": "Gennaro Gattuso",
+        "sitio_web": "clubdeportivonapoles.com",
+        "email": "clubnapoles@email.com",
+        "fundacion": "1926"
       },
       {
         "nombre_eq": "Piemonte Calcio",
-        "entrenador": ,
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "entrenador": "Andrea Pirlo",
+        "sitio_web": "juventus.com",
+        "email": "juventus@email.com",
+        "fundacion": "1 de noviembre de 1897"
       },
       {
         "nombre_eq": "PSG",
-        "entrenador": ,
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "entrenador": "Tomas Tuchel",
+        "sitio_web": "es.psg.fr",
+        "email": "psg@email.com",
+        "fundacion": "12 de agosto de 1970"
       },
       {
         "nombre_eq": "Real Madrid",
         "entrenador": "Zinedine Zidane",
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "sitio_web": "realmadrid.com",
+        "email": "realmadrid@email.com",
+        "fundacion": "6 de marzo de 1902"
       },
       {
         "nombre_eq": "Tottenham",
-        "entrenador": "Pochetino",
-        "sitio_web": ,
-        "email": ,
-        "fundacion":
+        "entrenador": "José Mourinho",
+        "sitio_web": "tottenhamhospur.com",
+        "email": "@email.com",
+        "fundacion": "5 de septiembre de 1882"
       }
   ]
 );
