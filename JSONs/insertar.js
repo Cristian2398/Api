@@ -1,7 +1,7 @@
 /*--------------------INSERTAR LOS PLANTILLA--------------------- */
 /*------------------------------------------------------------- */
 
-db.plantilla.insertMany(
+db.plantillas.insertMany(
 [
   {
     "_id:": new ObjectId(),

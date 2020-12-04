@@ -3,7 +3,7 @@ use('torneo_futbol');
 //1. Consultar la plantilla (jugadores) de los equipos en cada edición de los torneos.
 db.plantillas.aggregate([      
     {$project:{
-            "nombre_equipo": 1,
+            "nombre_eq": 1,
             "edicion_torneo": 1,
             "jugadores": 1
         }
