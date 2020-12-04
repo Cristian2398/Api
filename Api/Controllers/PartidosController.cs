@@ -13,54 +13,54 @@ namespace Api.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class EquipoController : Controller
+    public class PartidosController : Controller
     {
-        private IEquiposCollections db = new EquipoCollection();
+        private IPartidosCollections db = new PartidosCollection();
         public async Task<IActionResult> GetAllEquipos()
         {
-            return Ok(await db.GetAllEquipos());
+            return Ok(await db.GetAllPartido());
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetAllEquiposDetails(string id)
+        public async Task<IActionResult> GetAllPartidosDetails(string id)
         {
-            return Ok(await db.GetEquipoById(id));
+            return Ok(await db.GetPartidoById(id));
 
         }
         [HttpPost]
-        public async Task<IActionResult> CreateEquipo([FromBody] Equipo equipo)
+        public async Task<IActionResult> CreatePartido([FromBody] Partidos partidos)
         {
-            if (equipo == null)
+            if (partidos == null)
                 return BadRequest();
 
-            if (equipo.nombre_eq == string.Empty)
+            if (partidos.grupo == string.Empty)
             {
-                ModelState.AddModelError("Name", "El equipo no esta");
+                ModelState.AddModelError("Name", "El Partido no esta");
 
             }
-            await db.InsertEquipo(equipo);
+            await db.InsertPartido(partidos);
             return Created("created", true);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateEquipo([FromBody] Equipo equipo, string id)
+        public async Task<IActionResult> UpdatePartido([FromBody] Partidos partidos, string id)
         {
-            if (equipo == null)
+            if (partidos == null)
                 return BadRequest();
 
-            if (equipo.nombre_eq == string.Empty)
+            if (partidos.grupo == string.Empty)
             {
                 ModelState.AddModelError("Name", "El equipo no esta");
 
             }
-            equipo.Id = new MongoDB.Bson.ObjectId(id);
-            await db.UpdateEquipo(equipo);
+            partidos.Id = new MongoDB.Bson.ObjectId(id);
+            await db.UpdatePartido(partidos);
             return Created("created", true);
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult>DeleteEquipo(string id)
         {
-            await db.DeleteEquipo(id);
+            await db.DeletePartido(id);
             return NoContent();//success
         }
     }

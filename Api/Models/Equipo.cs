@@ -13,9 +13,9 @@ namespace Api.Models
         [BsonId]
         public ObjectId Id { get; set; }
         
-        public string Name { get; set; }
+        public string nombre_eq { get; set; }
         
-        public int Edad { get; set; }
+        public Object plantilla { get; set; }
         
 
     }

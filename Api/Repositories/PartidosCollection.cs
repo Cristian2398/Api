@@ -10,44 +10,44 @@ using System.Text.Json.Serialization;
 
 namespace Api.Repositories
 {
-    public class EquipoCollection : IEquiposCollections
+    public class PartidosCollection : IPartidosCollections
     {
         internal MongoRepository _repository = new MongoRepository();
-        private IMongoCollection<Equipo> Collection;
-        public EquipoCollection()
+        private IMongoCollection<Partidos> Collection;
+        public PartidosCollection() 
         {
             //Va a traer los datos de la colleccion y los va a guardar en coleccion para interactuar con ella
-            Collection = _repository.db.GetCollection<Equipo>("equipos");
+            Collection = _repository.db.GetCollection<Partidos>("partidos");
 
         }
-        public async Task DeleteEquipo(string id)
+        public async Task DeletePartido (string id)
         {
             //creamos el filtro, luego le pedimos a la coleccion que borre uno
-            var filter = Builders<Equipo>.Filter.Eq(s => s.Id, new ObjectId(id));
+            var filter = Builders<Partidos>.Filter.Eq(s => s.Id, new ObjectId(id));
             await Collection.DeleteOneAsync(filter);
         }
 
-        public async Task<List<Equipo>> GetAllEquipos()
+        public async Task<List<Partidos>> GetAllPartido()
         {
             
             return await Collection.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
        
 
-        public async Task<Equipo> GetEquipoById(string id)
+        public async Task<Partidos> GetPartidoById(string id)
         {
             return await Collection.FindAsync(new BsonDocument { { "_id", new ObjectId(id) } }).Result.FirstAsync();
         }
 
-        public async Task InsertEquipo(Equipo equipo)
+        public async Task InsertPartido(Partidos partidos)
         {
-            await Collection.InsertOneAsync(equipo);
+            await Collection.InsertOneAsync(partidos);
         }
 
-        public async Task UpdateEquipo(Equipo equipo)
+        public async Task UpdatePartido(Partidos partidos)
         {
-            var filter = Builders<Equipo>.Filter.Eq(s => s.Id, equipo.Id);
-            await Collection.ReplaceOneAsync(filter, equipo);
+            var filter = Builders<Partidos>.Filter.Eq(s => s.Id, partidos.Id);
+            await Collection.ReplaceOneAsync(filter, partidos);
         }
     }
 }
