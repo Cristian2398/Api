@@ -11,7 +11,6 @@ namespace Api.Repositories
         Task InsertPlantillas(Plantillas plantillas);
         Task UpdatePlantillas(Plantillas plantillas);
         Task DeletePlantillas(string id);
-
         Task<List<Plantillas>> GetAllPlantillas();
         Task<Plantillas> GetPlantillasById(string id);
     }
