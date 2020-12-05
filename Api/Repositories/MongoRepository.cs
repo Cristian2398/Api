@@ -17,7 +17,7 @@ namespace Api.Repositories
         public MongoRepository()
         {
             client = new MongoClient("mongodb://localhost:27017");
-            db = client.GetDatabase("test");
+            db = client.GetDatabase("torneo_futbol");
 
         }
 
