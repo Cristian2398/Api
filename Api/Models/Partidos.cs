@@ -15,7 +15,7 @@ namespace Api.Models
         public string fase { get; set; }
         public string grupo { get; set; }
         public string estadio { get; set; }
-        public string Ubicacion { get; set; }
+        public string ubicacion { get; set; }
         public Object arbitros { get; set; }
         public Object equipoLocal { get; set; }
         public Object equipoVisitante { get; set; }
