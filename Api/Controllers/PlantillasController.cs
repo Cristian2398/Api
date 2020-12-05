@@ -18,7 +18,16 @@ namespace Api.Controllers
         private IPlantillasCollections db = new PlantillasCollection();
         public async Task<IActionResult> GetAllPlatillas()
         {
-            return Ok(await db.GetAllPlantillas());
+            var result = await db.GetAllPlantillas();
+
+            foreach (Plantillas name in result)
+            {
+                Console.WriteLine(name.nombre_eq);
+                Console.WriteLine(name.jugadores);
+                
+
+            }
+            return Ok(result);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetAllPlantillasDetails(string id)
