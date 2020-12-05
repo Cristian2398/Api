@@ -15,10 +15,10 @@ namespace Api.Controllers
     [ApiController]
     public class TorneoController : Controller
     {
-        private IEquiposCollections db = new TorneoCollection();
+        private ITorneoCollections db = new TorneoCollection();
         public async Task<IActionResult> GetAllTorneo()
         {
-            return Ok(await db.GetAllTorneo());
+            return Ok(await db.GetAllTorneos());
         }
 
         [HttpGet("{id}")]
