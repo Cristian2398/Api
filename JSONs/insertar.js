@@ -10,13 +10,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "a",
     "jugadores": [
-        {  "nombre": "Oblak", "n_camiseta": 1, "altura": 185, "edad": 25 },
-        {  "nombre": "N'Golo Kanté", "n_camiseta": 18, "altura": 177, "edad": 29 },
-        {  "nombre": "Eriksen", "n_camiseta": 30, "altura": 178, "edad": 29 },
-        {  "nombre": "Jordi Alba", "n_camiseta": 42, "altura": 176, "edad": 19 },
-        {  "nombre": "Jan Vertonghen", "n_camiseta": 54, "altura": 191, "edad": 27 },
-        {  "nombre": "Milan Škriniar", "n_camiseta": 66, "altura": 187, "edad": 36 },
-        {  "nombre": "Varane", "n_camiseta": 78, "altura": 200, "edad": 33 }
+        {  "nombre": "Oblak", "n_camiseta": NumberInt(1), "altura": NumberInt(185), "edad": NumberInt(25) },
+        {  "nombre": "N'Golo Kanté", "n_camiseta": NumberInt(18), "altura": NumberInt(177), "edad": NumberInt(29) },
+        {  "nombre": "Eriksen", "n_camiseta": NumberInt(30), "altura": NumberInt(178), "edad": NumberInt(29) },
+        {  "nombre": "Jordi Alba", "n_camiseta": NumberInt(42), "altura": NumberInt(176), "edad": NumberInt(19) },
+        {  "nombre": "Jan Vertonghen", "n_camiseta": NumberInt(54), "altura": NumberInt(191), "edad": NumberInt(27) },
+        {  "nombre": "Milan Škriniar", "n_camiseta": NumberInt(66), "altura": NumberInt(187), "edad": NumberInt(36) },
+        {  "nombre": "Varane", "n_camiseta": NumberInt(78), "altura": NumberInt(200), "edad": NumberInt(33) }
     ]
   },{
     "_id:": new ObjectId(),
@@ -25,13 +25,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "a",
     "jugadores": [
-        {  "nombre": "Messi", "n_camiseta": 1, "altura": 178, "edad": 35 },
-        {  "nombre": "Sergio Agüero", "n_camiseta": 13, "altura": 174, "edad": 41 },
-        {  "nombre": "Aubameyang", "n_camiseta": 25, "altura": 197, "edad": 29 },
-        {  "nombre": "Godín", "n_camiseta": 37, "altura": 174, "edad": 41 },
-        {  "nombre": "Aymeric Laporte", "n_camiseta": 49, "altura": 186, "edad": 23 },
-        {  "nombre": "Marquinhos", "n_camiseta": 61, "altura": 183, "edad": 27 },
-        {  "nombre": "Daniel Parejo", "n_camiseta": 73, "altura": 198, "edad": 31 }
+        {  "nombre": "Messi", "n_camiseta": NumberInt(1), "altura": NumberInt(178), "edad": NumberInt(35) },
+        {  "nombre": "Sergio Agüero", "n_camiseta": NumberInt(13), "altura": NumberInt(174), "edad": NumberInt(41) },
+        {  "nombre": "Aubameyang", "n_camiseta": NumberInt(25), "altura": NumberInt(197), "edad": NumberInt(29) },
+        {  "nombre": "Godín", "n_camiseta": NumberInt(37), "altura": NumberInt(174), "edad": NumberInt(41) },
+        {  "nombre": "Aymeric Laporte", "n_camiseta": NumberInt(49), "altura": NumberInt(186), "edad": NumberInt(23) },
+        {  "nombre": "Marquinhos", "n_camiseta": NumberInt(61), "altura": NumberInt(183), "edad": NumberInt(27) },
+        {  "nombre": "Daniel Parejo", "n_camiseta": NumberInt(73), "altura": NumberInt(198), "edad": NumberInt(31) }
     ]
 },{
     "_id:": new ObjectId(),
@@ -40,13 +40,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "a",
     "jugadores": [
-        {  "nombre": "Mohamed Salah ", "n_camiseta": 1, "altura": 181, "edad": 39 },
-        {  "nombre": "Griezmann", "n_camiseta": 20, "altura": 182, "edad":28 },
-        {  "nombre": "Cavani", "n_camiseta": 32, "altura": 187, "edad": 37 },
-        {  "nombre": "Fernandinho", "n_camiseta": 44, "altura": 184, "edad": 26 },
-        {  "nombre": "Joshua Kimmich", "n_camiseta": 56, "altura": 181, "edad": 23 },
-        {  "nombre": "Thomas Müller", "n_camiseta": 68, "altura": 186, "edad": 26 },
-        {  "nombre": "Axel Witsel", "n_camiseta": 80, "altura": 183, "edad": 27 }
+        {  "nombre": "Mohamed Salah ", "n_camiseta": NumberInt(1), "altura": NumberInt(181), "edad": NumberInt(39) },
+        {  "nombre": "Griezmann", "n_camiseta": NumberInt(20), "altura": NumberInt(182), "edad": NumberInt(28)},
+        {  "nombre": "Cavani", "n_camiseta": NumberInt(32), "altura": NumberInt(187), "edad": NumberInt(37) },
+        {  "nombre": "Fernandinho", "n_camiseta": NumberInt(44), "altura": NumberInt(184), "edad": NumberInt(26) },
+        {  "nombre": "Joshua Kimmich", "n_camiseta": NumberInt(56), "altura": NumberInt(181), "edad": NumberInt(23) },
+        {  "nombre": "Thomas Müller", "n_camiseta": NumberInt(68), "altura": NumberInt(186), "edad": NumberInt(26) },
+        {  "nombre": "Axel Witsel", "n_camiseta": NumberInt(80), "altura": NumberInt(183), "edad": NumberInt(27) }
 
     ]
 },{
@@ -56,13 +56,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "a",
     "jugadores": [
-        {  "nombre": "Mbappé", "n_camiseta": 1, "altura": 192, "edad": 19 },
-        {  "nombre": "De Gea", "n_camiseta": 23, "altura": 197, "edad":29 },
-        {  "nombre": "David Silva", "n_camiseta": 35, "altura": 193, "edad": 27 },
-        {  "nombre": "Bernardo Silva", "n_camiseta": 47, "altura": 181, "edad": 38 },
-        {  "nombre": "Di María", "n_camiseta": 59, "altura": 192, "edad": 31 },
-        {  "nombre": "Isco", "n_camiseta": 71, "altura": 182, "edad": 24 },
-        {  "nombre": "Alex Sandro", "n_camiseta": 83, "altura": 18, "edad": 30 }
+        {  "nombre": "Mbappé", "n_camiseta": NumberInt(1), "altura": NumberInt(192), "edad": NumberInt(19) },
+        {  "nombre": "De Gea", "n_camiseta": NumberInt(23), "altura": NumberInt(197), "edad": NumberInt(29 )},
+        {  "nombre": "David Silva", "n_camiseta": NumberInt(35), "altura": NumberInt(193), "edad": NumberInt(27) },
+        {  "nombre": "Bernardo Silva", "n_camiseta": NumberInt(47), "altura": NumberInt(181), "edad": NumberInt(38) },
+        {  "nombre": "Di María", "n_camiseta": NumberInt(59), "altura": NumberInt(192), "edad": NumberInt(31) },
+        {  "nombre": "Isco", "n_camiseta": NumberInt(71), "altura": NumberInt(182), "edad": NumberInt(24) },
+        {  "nombre": "Alex Sandro", "n_camiseta": NumberInt(83), "altura": NumberInt(180), "edad": NumberInt(30)}
 
     ]
 },{
@@ -72,13 +72,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "b",
     "jugadores": [
-        {  "nombre": "Van Dijk", "n_camiseta": 1, "altura": 198, "edad": 29 },
-        {  "nombre": "Alisson", "n_camiseta": 19, "altura": 196, "edad":35 },
-        {  "nombre": "Pogba", "n_camiseta": 31, "altura": 197, "edad": 27 },
-        {  "nombre": "Mats Hummels", "n_camiseta": 43, "altura": 193, "edad": 21 },
-        {  "nombre": "Keylor Navas", "n_camiseta": 55, "altura": 191, "edad": 40 },
-        {  "nombre": "Samuel Umtit", "n_camiseta": 67, "altura": 177, "edad": 28 },
-        {  "nombre": "Andrew Robertson", "n_camiseta": 79, "altura": 168, "edad": 31 }
+        {  "nombre": "Van Dijk", "n_camiseta": NumberInt(1), "altura": NumberInt(198), "edad": NumberInt(29) },
+        {  "nombre": "Alisson", "n_camiseta": NumberInt(19), "altura": NumberInt(196), "edad": NumberInt(35 )},
+        {  "nombre": "Pogba", "n_camiseta": NumberInt(31), "altura": NumberInt(197), "edad": NumberInt(27) },
+        {  "nombre": "Mats Hummels", "n_camiseta": NumberInt(43), "altura": NumberInt(193), "edad": NumberInt(21) },
+        {  "nombre": "Keylor Navas", "n_camiseta": NumberInt(55), "altura": NumberInt(191), "edad": NumberInt(40) },
+        {  "nombre": "Samuel Umtit", "n_camiseta": NumberInt(67), "altura": NumberInt(177), "edad": NumberInt(28) },
+        {  "nombre": "Andrew Robertson", "n_camiseta": NumberInt(79), "altura": NumberInt(168), "edad": NumberInt(31) }
 
     ]
 },{
@@ -88,13 +88,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "b",
     "jugadores": [
-        {  "nombre": "Kevin de Bruyne", "n_camiseta": 1, "altura": 186, "edad": 37 },
-        {  "nombre": "Kalidou Koulibaly", "n_camiseta": 17, "altura": 176, "edad":33 },
-        {  "nombre": "Kroos", "n_camiseta": 29, "altura": 191, "edad": 30 },
-        {  "nombre": "Benzema", "n_camiseta": 41, "altura": 170, "edad": 41 },
-        {  "nombre": "Lorenzo Insigne", "n_camiseta": 53, "altura": 185, "edad": 21 },
-        {  "nombre": "Rakitić", "n_camiseta": 65, "altura": 186, "edad": 39 },
-        {  "nombre": "Frenkie de Jong", "n_camiseta": 77, "altura": 173, "edad": 25 }
+        {  "nombre": "Kevin de Bruyne", "n_camiseta": NumberInt(1), "altura": NumberInt(186), "edad": NumberInt(37) },
+        {  "nombre": "Kalidou Koulibaly", "n_camiseta": NumberInt(17), "altura": NumberInt(176), "edad": NumberInt(33)},
+        {  "nombre": "Kroos", "n_camiseta": NumberInt(29), "altura": NumberInt(191), "edad": NumberInt(30) },
+        {  "nombre": "Benzema", "n_camiseta": NumberInt(41), "altura": NumberInt(170), "edad": NumberInt(41) },
+        {  "nombre": "Lorenzo Insigne", "n_camiseta": NumberInt(53), "altura": NumberInt(185), "edad": NumberInt(21) },
+        {  "nombre": "Rakitić", "n_camiseta": NumberInt(65), "altura": NumberInt(186), "edad": NumberInt(39) },
+        {  "nombre": "Frenkie de Jong", "n_camiseta": NumberInt(77), "altura": NumberInt(173), "edad": NumberInt(25) }
 
     ]
 },{
@@ -104,13 +104,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "b",
     "jugadores": [
-        {  "nombre": "Sergio Ramos", "n_camiseta": 1, "altura": 178, "edad": 40 },
-        {  "nombre": "Raheem Sterling", "n_camiseta": 24, "altura": 197, "edad":32 },
-        {  "nombre": "Hugo Lloris", "n_camiseta": 36, "altura": 175, "edad": 22 },
-        {  "nombre": "Thiago", "n_camiseta": 48, "altura": 179, "edad": 25 },
-        {  "nombre": "Alexandre Lacazette", "n_camiseta": 60, "altura": 191, "edad": 36 },
-        {  "nombre": "Wojciech Szczęsny", "n_camiseta": 72, "altura": 196, "edad": 35 },
-        {  "nombre": "Niklas Süle", "n_camiseta": 84, "altura": 184, "edad": 32 }
+        {  "nombre": "Sergio Ramos", "n_camiseta": NumberInt(1), "altura": NumberInt(178), "edad": NumberInt(40) },
+        {  "nombre": "Raheem Sterling", "n_camiseta": NumberInt(24), "altura": NumberInt(197), "edad": NumberInt(32)},
+        {  "nombre": "Hugo Lloris", "n_camiseta": NumberInt(36), "altura": NumberInt(175), "edad": NumberInt(22) },
+        {  "nombre": "Thiago", "n_camiseta": NumberInt(48), "altura": NumberInt(179), "edad": NumberInt(25) },
+        {  "nombre": "Alexandre Lacazette", "n_camiseta": NumberInt(60), "altura": NumberInt(191), "edad": NumberInt(36) },
+        {  "nombre": "Wojciech Szczęsny", "n_camiseta": NumberInt(72), "altura": NumberInt(196), "edad": NumberInt(35) },
+        {  "nombre": "Niklas Süle", "n_camiseta": NumberInt(84), "altura": NumberInt(184), "edad": NumberInt(32) }
 
     ]
 },{
@@ -120,13 +120,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "b",
     "jugadores": [
-        {  "nombre": "Ter Stegen", "n_camiseta": 10, "altura": 172, "edad": 39 },
-        {  "nombre": "Luis Suárez", "n_camiseta": 22, "altura": 184, "edad":18 },
-        {  "nombre": "Ederson", "n_camiseta": 34, "altura": 175, "edad": 41 },
-        {  "nombre": "Toby Alderweireld", "n_camiseta": 46, "altura": 192, "edad": 32 },
-        {  "nombre": "Pjanić", "n_camiseta": 58, "altura": 179, "edad": 32 },
-        {  "nombre": "Ciro Immobile", "n_camiseta": 70, "altura": 175, "edad": 39 },
-        {  "nombre": "Fabinho", "n_camiseta": 82, "altura": 184, "edad": 28 }
+        {  "nombre": "Ter Stegen", "n_camiseta": NumberInt(10), "altura": NumberInt(172), "edad": NumberInt(39) },
+        {  "nombre": "Luis Suárez", "n_camiseta": NumberInt(22), "altura": NumberInt(184), "edad": NumberInt(18)},
+        {  "nombre": "Ederson", "n_camiseta": NumberInt(34), "altura": NumberInt(175), "edad": NumberInt(41) },
+        {  "nombre": "Toby Alderweireld", "n_camiseta": NumberInt(46), "altura": NumberInt(192), "edad": NumberInt(32) },
+        {  "nombre": "Pjanić", "n_camiseta": NumberInt(58), "altura": NumberInt(179), "edad": NumberInt(32) },
+        {  "nombre": "Ciro Immobile", "n_camiseta": NumberInt(70), "altura": NumberInt(175), "edad": NumberInt(39) },
+        {  "nombre": "Fabinho", "n_camiseta": NumberInt(82), "altura": NumberInt(184), "edad": NumberInt(28) }
 
     ]
 }, {
@@ -136,13 +136,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "c",
     "jugadores": [
-        {  "nombre": "Cristiano Ronaldo", "n_camiseta": 1, "altura": 183, "edad": 39 },
-        {  "nombre": "Chiellini", "n_camiseta": 14, "altura": 200, "edad": 22 },
-        {  "nombre": "Gerard Piqué", "n_camiseta": 26, "altura": 172, "edad": 23 },
-        {  "nombre": "Dybala", "n_camiseta": 38, "altura": 182, "edad": 35 },
-        {  "nombre": "Dries Mertens", "n_camiseta": 50, "altura": 168, "edad": 27 },
-        {  "nombre": "Firmino", "n_camiseta": 62, "altura": 169, "edad": 41 },
-        {  "nombre": "Marcelo", "n_camiseta": 74, "altura": 171, "edad": 22 }
+        {  "nombre": "Cristiano Ronaldo", "n_camiseta": NumberInt(1), "altura": NumberInt(183), "edad": NumberInt(39) },
+        {  "nombre": "Chiellini", "n_camiseta": NumberInt(14), "altura": NumberInt(200), "edad": NumberInt(22) },
+        {  "nombre": "Gerard Piqué", "n_camiseta": NumberInt(26), "altura": NumberInt(172), "edad": NumberInt(23) },
+        {  "nombre": "Dybala", "n_camiseta": NumberInt(38), "altura": NumberInt(182), "edad": NumberInt(35) },
+        {  "nombre": "Dries Mertens", "n_camiseta": NumberInt(50), "altura": NumberInt(168), "edad": NumberInt(27) },
+        {  "nombre": "Firmino", "n_camiseta": NumberInt(62), "altura": NumberInt(169), "edad": NumberInt(41) },
+        {  "nombre": "Marcelo", "n_camiseta": NumberInt(74), "altura": NumberInt(171), "edad": NumberInt(22) }
 
     ]
 },{
@@ -152,13 +152,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "c",
     "jugadores": [
-        {  "nombre": "Neymar Jr", "n_camiseta": 3, "altura": 189, "edad": 19 },
-        {  "nombre": "Lewandowski", "n_camiseta": 15, "altura": 200, "edad": 41 },
-        {  "nombre": "Neuer", "n_camiseta": 27, "altura": 190, "edad": 40 },
-        {  "nombre": "Courtois", "n_camiseta": 39, "altura": 189, "edad": 33 },
-        {  "nombre": "Thiago Silva", "n_camiseta": 51, "altura": 191, "edad": 36 },
-        {  "nombre": "Marco Verratti", "n_camiseta": 63, "altura": 196, "edad": 20 },
-        {  "nombre": "Gianluigi Donnarumma", "n_camiseta": 75, "altura": 186, "edad": 20 }
+        {  "nombre": "Neymar Jr", "n_camiseta": NumberInt(3), "altura": NumberInt(189), "edad": NumberInt(19) },
+        {  "nombre": "Lewandowski", "n_camiseta": NumberInt(15), "altura": NumberInt(200), "edad": NumberInt(41) },
+        {  "nombre": "Neuer", "n_camiseta": NumberInt(27), "altura": NumberInt(190), "edad": NumberInt(40) },
+        {  "nombre": "Courtois", "n_camiseta": NumberInt(39), "altura": NumberInt(189), "edad": NumberInt(33) },
+        {  "nombre": "Thiago Silva", "n_camiseta": NumberInt(51), "altura": NumberInt(191), "edad": NumberInt(36) },
+        {  "nombre": "Marco Verratti", "n_camiseta": NumberInt(63), "altura": NumberInt(196), "edad": NumberInt(20) },
+        {  "nombre": "Gianluigi Donnarumma", "n_camiseta": NumberInt(75), "altura": NumberInt(186), "edad": NumberInt(20) }
 
     ]
 },{
@@ -168,13 +168,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "c",
     "jugadores": [
-        {  "nombre": "Hazard", "n_camiseta": 1, "altura": 200, "edad": 40 },
-        {  "nombre": "Kane", "n_camiseta": 16, "altura": 182, "edad": 27 },
-        {  "nombre": "Mané", "n_camiseta": 28, "altura": 186, "edad": 25 },
-        {  "nombre": "Samir Handanovič", "n_camiseta": 40, "altura": 186, "edad": 25 },
-        {  "nombre": "Casemiro", "n_camiseta": 52, "altura": 171, "edad": 18 },
-        {  "nombre": "Leonardo Bonucci", "n_camiseta": 64, "altura": 180, "edad": 27 },
-        {  "nombre": "James Rodríguez", "n_camiseta": 76, "altura": 196, "edad": 31 }
+        {  "nombre": "Hazard", "n_camiseta": NumberInt(1), "altura": NumberInt(200), "edad": NumberInt(40) },
+        {  "nombre": "Kane", "n_camiseta": NumberInt(16), "altura": NumberInt(182), "edad": NumberInt(27) },
+        {  "nombre": "Mané", "n_camiseta": NumberInt(28), "altura": NumberInt(186), "edad": NumberInt(25) },
+        {  "nombre": "Samir Handanovič", "n_camiseta": NumberInt(40), "altura": NumberInt(186), "edad": NumberInt(25) },
+        {  "nombre": "Casemiro", "n_camiseta": NumberInt(52), "altura": NumberInt(171), "edad": NumberInt(18) },
+        {  "nombre": "Leonardo Bonucci", "n_camiseta": NumberInt(64), "altura": NumberInt(180), "edad": NumberInt(27) },
+        {  "nombre": "James Rodríguez", "n_camiseta": NumberInt(76), "altura": NumberInt(196), "edad": NumberInt(31) }
 
     ]
 }, {
@@ -184,13 +184,13 @@ db.plantillas.insertMany(
     "fase": "clasificacion_grupos",
     "grupo": "c",
     "jugadores": [
-        {  "nombre": "Modrić", "n_camiseta": 1, "altura": 286, "edad": 37 },
-        {  "nombre": "Sergio Busquets", "n_camiseta": 21, "altura": 176, "edad": 27 },
-        {  "nombre": "Marco Reus", "n_camiseta": 33, "altura": 194, "edad": 39 },
-        {  "nombre": "Heung Min Son", "n_camiseta": 45, "altura": 176, "edad": 39 },
-        {  "nombre": "Leroy Sané", "n_camiseta": 57, "altura": 193, "edad": 40 },
-        {  "nombre": "Coutinho", "n_camiseta": 69, "altura": 178, "edad": 21 },
-        {  "nombre": "De Ligt", "n_camiseta": 81, "altura": 170, "edad": 20 }
+        {  "nombre": "Modrić", "n_camiseta": NumberInt(1), "altura": NumberInt(286), "edad": NumberInt(37) },
+        {  "nombre": "Sergio Busquets", "n_camiseta": NumberInt(21), "altura": NumberInt(176), "edad": NumberInt(27) },
+        {  "nombre": "Marco Reus", "n_camiseta": NumberInt(33), "altura": NumberInt(194), "edad": NumberInt(39) },
+        {  "nombre": "Heung Min Son", "n_camiseta": NumberInt(45), "altura": NumberInt(176), "edad": NumberInt(39) },
+        {  "nombre": "Leroy Sané", "n_camiseta": NumberInt(57), "altura": NumberInt(193), "edad": NumberInt(40) },
+        {  "nombre": "Coutinho", "n_camiseta": NumberInt(69), "altura": NumberInt(178), "edad": NumberInt(21) },
+        {  "nombre": "De Ligt", "n_camiseta": NumberInt(81), "altura": NumberInt(170), "edad": NumberInt(20) }
 
     ]
 }
@@ -295,90 +295,90 @@ db.equipos.insertMany(
 /*------------------------------------------------------------- */
 db.jugadores.insertMany(
   [
-  {  "nombre": "Oblak", "n_camiseta": 1, "altura": 185, "edad": 25 },
-  {  "nombre": "N'Golo Kanté", "n_camiseta": 18, "altura": 177, "edad": 29 },
-  {  "nombre": "Eriksen", "n_camiseta": 30, "altura": 178, "edad": 29 },
-  {  "nombre": "Jordi Alba", "n_camiseta": 42, "altura": 176, "edad": 19 },
-  {  "nombre": "Jan Vertonghen", "n_camiseta": 54, "altura": 191, "edad": 27 },
-  {  "nombre": "Milan Škriniar", "n_camiseta": 66, "altura": 187, "edad": 36 },
-  {  "nombre": "Varane", "n_camiseta": 78, "altura": 200, "edad": 33 },
-  {  "nombre": "Messi", "n_camiseta": 1, "altura": 178, "edad": 35 },
-  {  "nombre": "Sergio Agüero", "n_camiseta": 13, "altura": 174, "edad": 41 },
-  {  "nombre": "Aubameyang", "n_camiseta": 25, "altura": 197, "edad": 29 },
-  {  "nombre": "Godín", "n_camiseta": 37, "altura": 174, "edad": 41 },
-  {  "nombre": "Aymeric Laporte", "n_camiseta": 49, "altura": 186, "edad": 23 },
-  {  "nombre": "Marquinhos", "n_camiseta": 61, "altura": 183, "edad": 27 },
-  {  "nombre": "Daniel Parejo", "n_camiseta": 73, "altura": 198, "edad": 31 },
-  {  "nombre": "Mohamed Salah ", "n_camiseta": 1, "altura": 181, "edad": 39 },
-  {  "nombre": "Griezmann", "n_camiseta": 20, "altura": 182, "edad":28 },
-  {  "nombre": "Cavani", "n_camiseta": 32, "altura": 187, "edad": 37 },
-  {  "nombre": "Fernandinho", "n_camiseta": 44, "altura": 184, "edad": 26 },
-  {  "nombre": "Joshua Kimmich", "n_camiseta": 56, "altura": 181, "edad": 23 },
-  {  "nombre": "Thomas Müller", "n_camiseta": 68, "altura": 186, "edad": 26 },
-  {  "nombre": "Axel Witsel", "n_camiseta": 80, "altura": 183, "edad": 27 },
-  {  "nombre": "Mbappé", "n_camiseta": 1, "altura": 192, "edad": 19 },
-  {  "nombre": "De Gea", "n_camiseta": 23, "altura": 197, "edad":29 },
-  {  "nombre": "David Silva", "n_camiseta": 35, "altura": 193, "edad": 27 },
-  {  "nombre": "Bernardo Silva", "n_camiseta": 47, "altura": 181, "edad": 38 },
-  {  "nombre": "Di María", "n_camiseta": 59, "altura": 192, "edad": 31 },
-  {  "nombre": "Isco", "n_camiseta": 71, "altura": 182, "edad": 24 },
-  {  "nombre": "Alex Sandro", "n_camiseta": 83, "altura": 18, "edad": 30 },
-  {  "nombre": "Van Dijk", "n_camiseta": 1, "altura": 198, "edad": 29 },
-  {  "nombre": "Alisson", "n_camiseta": 19, "altura": 196, "edad":35 },
-  {  "nombre": "Pogba", "n_camiseta": 31, "altura": 197, "edad": 27 },
-  {  "nombre": "Mats Hummels", "n_camiseta": 43, "altura": 193, "edad": 21 },
-  {  "nombre": "Keylor Navas", "n_camiseta": 55, "altura": 191, "edad": 40 },
-  {  "nombre": "Samuel Umtit", "n_camiseta": 67, "altura": 177, "edad": 28 },
-  {  "nombre": "Andrew Robertson", "n_camiseta": 79, "altura": 168, "edad": 31 },
-  {  "nombre": "Kevin de Bruyne", "n_camiseta": 1, "altura": 186, "edad": 37 },
-  {  "nombre": "Kalidou Koulibaly", "n_camiseta": 17, "altura": 176, "edad":33 },
-  {  "nombre": "Kroos", "n_camiseta": 29, "altura": 191, "edad": 30 },
-  {  "nombre": "Benzema", "n_camiseta": 41, "altura": 170, "edad": 41 },
-  {  "nombre": "Lorenzo Insigne", "n_camiseta": 53, "altura": 185, "edad": 21 },
-  {  "nombre": "Rakitić", "n_camiseta": 65, "altura": 186, "edad": 39 },
-  {  "nombre": "Frenkie de Jong", "n_camiseta": 77, "altura": 173, "edad": 25 },
-  {  "nombre": "Sergio Ramos", "n_camiseta": 1, "altura": 178, "edad": 40 },
-  {  "nombre": "Raheem Sterling", "n_camiseta": 24, "altura": 197, "edad":32 },
-  {  "nombre": "Hugo Lloris", "n_camiseta": 36, "altura": 175, "edad": 22 },
-  {  "nombre": "Thiago", "n_camiseta": 48, "altura": 179, "edad": 25 },
-  {  "nombre": "Alexandre Lacazette", "n_camiseta": 60, "altura": 191, "edad": 36 },
-  {  "nombre": "Wojciech Szczęsny", "n_camiseta": 72, "altura": 196, "edad": 35 },
-  {  "nombre": "Niklas Süle", "n_camiseta": 84, "altura": 184, "edad": 32 },
-  {  "nombre": "Ter Stegen", "n_camiseta": 10, "altura": 172, "edad": 39 },
-  {  "nombre": "Luis Suárez", "n_camiseta": 22, "altura": 184, "edad":18 },
-  {  "nombre": "Ederson", "n_camiseta": 34, "altura": 175, "edad": 41 },
-  {  "nombre": "Toby Alderweireld", "n_camiseta": 46, "altura": 192, "edad": 32 },
-  {  "nombre": "Pjanić", "n_camiseta": 58, "altura": 179, "edad": 32 },
-  {  "nombre": "Ciro Immobile", "n_camiseta": 70, "altura": 175, "edad": 39 },
-  {  "nombre": "Fabinho", "n_camiseta": 82, "altura": 184, "edad": 28 },
-  {  "nombre": "Cristiano Ronaldo", "n_camiseta": 1, "altura": 183, "edad": 39 },
-  {  "nombre": "Chiellini", "n_camiseta": 14, "altura": 200, "edad": 22 },
-  {  "nombre": "Gerard Piqué", "n_camiseta": 26, "altura": 172, "edad": 23 },
-  {  "nombre": "Dybala", "n_camiseta": 38, "altura": 182, "edad": 35 },
-  {  "nombre": "Dries Mertens", "n_camiseta": 50, "altura": 168, "edad": 27 },
-  {  "nombre": "Firmino", "n_camiseta": 62, "altura": 169, "edad": 41 },
-  {  "nombre": "Marcelo", "n_camiseta": 74, "altura": 171, "edad": 22 },
-  {  "nombre": "Neymar Jr", "n_camiseta": 3, "altura": 189, "edad": 19 },
-  {  "nombre": "Lewandowski", "n_camiseta": 15, "altura": 200, "edad": 41 },
-  {  "nombre": "Neuer", "n_camiseta": 27, "altura": 190, "edad": 40 },
-  {  "nombre": "Courtois", "n_camiseta": 39, "altura": 189, "edad": 33 },
-  {  "nombre": "Thiago Silva", "n_camiseta": 51, "altura": 191, "edad": 36 },
-  {  "nombre": "Marco Verratti", "n_camiseta": 63, "altura": 196, "edad": 20 },
-  {  "nombre": "Gianluigi Donnarumma", "n_camiseta": 75, "altura": 186, "edad": 20 },
-  {  "nombre": "Hazard", "n_camiseta": 1, "altura": 200, "edad": 40 },
-  {  "nombre": "Kane", "n_camiseta": 16, "altura": 182, "edad": 27 },
-  {  "nombre": "Mané", "n_camiseta": 28, "altura": 186, "edad": 25 },
-  {  "nombre": "Samir Handanovič", "n_camiseta": 40, "altura": 186, "edad": 25 },
-  {  "nombre": "Casemiro", "n_camiseta": 52, "altura": 171, "edad": 18 },
-  {  "nombre": "Leonardo Bonucci", "n_camiseta": 64, "altura": 180, "edad": 27 },
-  {  "nombre": "James Rodríguez", "n_camiseta": 76, "altura": 196, "edad": 31 },
-  {  "nombre": "Modrić", "n_camiseta": 1, "altura": 286, "edad": 37 },
-  {  "nombre": "Sergio Busquets", "n_camiseta": 21, "altura": 176, "edad": 27 },
-  {  "nombre": "Marco Reus", "n_camiseta": 33, "altura": 194, "edad": 39 },
-  {  "nombre": "Heung Min Son", "n_camiseta": 45, "altura": 176, "edad": 39 },
-  {  "nombre": "Leroy Sané", "n_camiseta": 57, "altura": 193, "edad": 40 },
-  {  "nombre": "Coutinho", "n_camiseta": 69, "altura": 178, "edad": 21 },
-  {  "nombre": "De Ligt", "n_camiseta": 81, "altura": 170, "edad": 20 }
+  {  "nombre": "Oblak", "n_camiseta": NumberInt(1), "altura": NumberInt(185), "edad": NumberInt(25) },
+  {  "nombre": "N'Golo Kanté", "n_camiseta": NumberInt(18), "altura": NumberInt(177), "edad": NumberInt(29) },
+  {  "nombre": "Eriksen", "n_camiseta": NumberInt(30), "altura": NumberInt(178), "edad": NumberInt(29) },
+  {  "nombre": "Jordi Alba", "n_camiseta": NumberInt(42), "altura": NumberInt(176), "edad": NumberInt(19) },
+  {  "nombre": "Jan Vertonghen", "n_camiseta": NumberInt(54), "altura": NumberInt(191), "edad": NumberInt(27) },
+  {  "nombre": "Milan Škriniar", "n_camiseta": NumberInt(66), "altura": NumberInt(187), "edad": NumberInt(36) },
+  {  "nombre": "Varane", "n_camiseta": NumberInt(78), "altura": NumberInt(200), "edad": NumberInt(33) },
+  {  "nombre": "Messi", "n_camiseta": NumberInt(1), "altura": NumberInt(178), "edad": NumberInt(35) },
+  {  "nombre": "Sergio Agüero", "n_camiseta": NumberInt(13), "altura": NumberInt(174), "edad": NumberInt(41) },
+  {  "nombre": "Aubameyang", "n_camiseta": NumberInt(25), "altura": NumberInt(197), "edad": NumberInt(29) },
+  {  "nombre": "Godín", "n_camiseta": NumberInt(37), "altura": NumberInt(174), "edad": NumberInt(41) },
+  {  "nombre": "Aymeric Laporte", "n_camiseta": NumberInt(49), "altura": NumberInt(186), "edad": NumberInt(23) },
+  {  "nombre": "Marquinhos", "n_camiseta": NumberInt(61), "altura": NumberInt(183), "edad": NumberInt(27) },
+  {  "nombre": "Daniel Parejo", "n_camiseta": NumberInt(73), "altura": NumberInt(198), "edad": NumberInt(31) },
+  {  "nombre": "Mohamed Salah ", "n_camiseta": NumberInt(1), "altura": NumberInt(181), "edad": NumberInt(39) },
+  {  "nombre": "Griezmann", "n_camiseta": NumberInt(20), "altura": NumberInt(182), "edad": NumberInt(28)},
+  {  "nombre": "Cavani", "n_camiseta": NumberInt(32), "altura": NumberInt(187), "edad": NumberInt(37) },
+  {  "nombre": "Fernandinho", "n_camiseta": NumberInt(44), "altura": NumberInt(184), "edad": NumberInt(26) },
+  {  "nombre": "Joshua Kimmich", "n_camiseta": NumberInt(56), "altura": NumberInt(181), "edad": NumberInt(23) },
+  {  "nombre": "Thomas Müller", "n_camiseta": NumberInt(68), "altura": NumberInt(186), "edad": NumberInt(26) },
+  {  "nombre": "Axel Witsel", "n_camiseta": NumberInt(80), "altura": NumberInt(183), "edad": NumberInt(27) },
+  {  "nombre": "Mbappé", "n_camiseta": NumberInt(1), "altura": NumberInt(192), "edad": NumberInt(19) },
+  {  "nombre": "De Gea", "n_camiseta": NumberInt(23), "altura": NumberInt(197), "edad": NumberInt(29)},
+  {  "nombre": "David Silva", "n_camiseta": NumberInt(35), "altura": NumberInt(193), "edad": NumberInt(27) },
+  {  "nombre": "Bernardo Silva", "n_camiseta": NumberInt(47), "altura": NumberInt(181), "edad": NumberInt(38) },
+  {  "nombre": "Di María", "n_camiseta": NumberInt(59), "altura": NumberInt(192), "edad": NumberInt(31) },
+  {  "nombre": "Isco", "n_camiseta": NumberInt(71), "altura": NumberInt(182), "edad": NumberInt(24) },
+  {  "nombre": "Alex Sandro", "n_camiseta": NumberInt(83), "altura": NumberInt(180), "edad": NumberInt(30)},
+  {  "nombre": "Van Dijk", "n_camiseta": NumberInt(1), "altura": NumberInt(198), "edad": NumberInt(29) },
+  {  "nombre": "Alisson", "n_camiseta": NumberInt(19), "altura": NumberInt(196), "edad": NumberInt(5)},
+  {  "nombre": "Pogba", "n_camiseta": NumberInt(31), "altura": NumberInt(197), "edad": NumberInt(27) },
+  {  "nombre": "Mats Hummels", "n_camiseta": NumberInt(43), "altura": NumberInt(193), "edad": NumberInt(21) },
+  {  "nombre": "Keylor Navas", "n_camiseta": NumberInt(55), "altura": NumberInt(191), "edad": NumberInt(40) },
+  {  "nombre": "Samuel Umtit", "n_camiseta": NumberInt(67), "altura": NumberInt(177), "edad": NumberInt(28) },
+  {  "nombre": "Andrew Robertson", "n_camiseta": NumberInt(79), "altura": NumberInt(168), "edad": NumberInt(31) },
+  {  "nombre": "Kevin de Bruyne", "n_camiseta": NumberInt(1), "altura": NumberInt(186), "edad": NumberInt(37) },
+  {  "nombre": "Kalidou Koulibaly", "n_camiseta": NumberInt(17), "altura": NumberInt(176), "edad": NumberInt(33)},
+  {  "nombre": "Kroos", "n_camiseta": NumberInt(29), "altura": NumberInt(191), "edad": NumberInt(30) },
+  {  "nombre": "Benzema", "n_camiseta": NumberInt(41), "altura": NumberInt(170), "edad": NumberInt(41) },
+  {  "nombre": "Lorenzo Insigne", "n_camiseta": NumberInt(53), "altura": NumberInt(185), "edad": NumberInt(21) },
+  {  "nombre": "Rakitić", "n_camiseta": NumberInt(65), "altura": NumberInt(186), "edad": NumberInt(39) },
+  {  "nombre": "Frenkie de Jong", "n_camiseta": NumberInt(77), "altura": NumberInt(173), "edad": NumberInt(25) },
+  {  "nombre": "Sergio Ramos", "n_camiseta": NumberInt(1), "altura": NumberInt(178), "edad": NumberInt(40) },
+  {  "nombre": "Raheem Sterling", "n_camiseta": NumberInt(24), "altura": NumberInt(197), "edad": NumberInt(32)},
+  {  "nombre": "Hugo Lloris", "n_camiseta": NumberInt(36), "altura": NumberInt(175), "edad": NumberInt(22) },
+  {  "nombre": "Thiago", "n_camiseta": NumberInt(48), "altura": NumberInt(179), "edad": NumberInt(25) },
+  {  "nombre": "Alexandre Lacazette", "n_camiseta": NumberInt(60), "altura": NumberInt(191), "edad": NumberInt(36) },
+  {  "nombre": "Wojciech Szczęsny", "n_camiseta": NumberInt(72), "altura": NumberInt(196), "edad": NumberInt(35) },
+  {  "nombre": "Niklas Süle", "n_camiseta": NumberInt(84), "altura": NumberInt(184), "edad": NumberInt(32) },
+  {  "nombre": "Ter Stegen", "n_camiseta": NumberInt(10), "altura": NumberInt(172), "edad": NumberInt(39) },
+  {  "nombre": "Luis Suárez", "n_camiseta": NumberInt(22), "altura": NumberInt(184), "edad": NumberInt(18)},
+  {  "nombre": "Ederson", "n_camiseta": NumberInt(34), "altura": NumberInt(175), "edad": NumberInt(41) },
+  {  "nombre": "Toby Alderweireld", "n_camiseta": NumberInt(46), "altura": NumberInt(192), "edad": NumberInt(32) },
+  {  "nombre": "Pjanić", "n_camiseta": NumberInt(58), "altura": NumberInt(179), "edad": NumberInt(32) },
+  {  "nombre": "Ciro Immobile", "n_camiseta": NumberInt(70), "altura": NumberInt(175), "edad": NumberInt(39) },
+  {  "nombre": "Fabinho", "n_camiseta": NumberInt(82), "altura": NumberInt(184), "edad": NumberInt(28) },
+  {  "nombre": "Cristiano Ronaldo", "n_camiseta": NumberInt(1), "altura": NumberInt(183), "edad": NumberInt(39) },
+  {  "nombre": "Chiellini", "n_camiseta": NumberInt(14), "altura": NumberInt(200), "edad": NumberInt(22) },
+  {  "nombre": "Gerard Piqué", "n_camiseta": NumberInt(26), "altura": NumberInt(172), "edad": NumberInt(23) },
+  {  "nombre": "Dybala", "n_camiseta": NumberInt(38), "altura": NumberInt(182), "edad": NumberInt(35) },
+  {  "nombre": "Dries Mertens", "n_camiseta": NumberInt(50), "altura": NumberInt(168), "edad": NumberInt(27) },
+  {  "nombre": "Firmino", "n_camiseta": NumberInt(62), "altura": NumberInt(169), "edad": NumberInt(41) },
+  {  "nombre": "Marcelo", "n_camiseta": NumberInt(74), "altura": NumberInt(171), "edad": NumberInt(22) },
+  {  "nombre": "Neymar Jr", "n_camiseta": NumberInt(3), "altura": NumberInt(189), "edad": NumberInt(19) },
+  {  "nombre": "Lewandowski", "n_camiseta": NumberInt(15), "altura": NumberInt(200), "edad": NumberInt(41) },
+  {  "nombre": "Neuer", "n_camiseta": NumberInt(27), "altura": NumberInt(190), "edad": NumberInt(40) },
+  {  "nombre": "Courtois", "n_camiseta": NumberInt(39), "altura": NumberInt(189), "edad": NumberInt(33) },
+  {  "nombre": "Thiago Silva", "n_camiseta": NumberInt(51), "altura": NumberInt(191), "edad": NumberInt(36) },
+  {  "nombre": "Marco Verratti", "n_camiseta": NumberInt(63), "altura": NumberInt(196), "edad": NumberInt(20) },
+  {  "nombre": "Gianluigi Donnarumma", "n_camiseta": NumberInt(75), "altura": NumberInt(186), "edad": NumberInt(20) },
+  {  "nombre": "Hazard", "n_camiseta": NumberInt(1), "altura": NumberInt(200), "edad": NumberInt(40) },
+  {  "nombre": "Kane", "n_camiseta": NumberInt(16), "altura": NumberInt(182), "edad": NumberInt(27) },
+  {  "nombre": "Mané", "n_camiseta": NumberInt(28), "altura": NumberInt(186), "edad": NumberInt(25) },
+  {  "nombre": "Samir Handanovič", "n_camiseta": NumberInt(40), "altura": NumberInt(186), "edad": NumberInt(25) },
+  {  "nombre": "Casemiro", "n_camiseta": NumberInt(52), "altura": NumberInt(171), "edad": NumberInt(18) },
+  {  "nombre": "Leonardo Bonucci", "n_camiseta": NumberInt(64), "altura": NumberInt(180), "edad": NumberInt(27) },
+  {  "nombre": "James Rodríguez", "n_camiseta": NumberInt(76), "altura": NumberInt(196), "edad": NumberInt(31) },
+  {  "nombre": "Modrić", "n_camiseta": NumberInt(1), "altura": NumberInt(286), "edad": NumberInt(37) },
+  {  "nombre": "Sergio Busquets", "n_camiseta": NumberInt(21), "altura": NumberInt(176), "edad": NumberInt(27) },
+  {  "nombre": "Marco Reus", "n_camiseta": NumberInt(33), "altura": NumberInt(194), "edad": NumberInt(39) },
+  {  "nombre": "Heung Min Son", "n_camiseta": NumberInt(45), "altura": NumberInt(176), "edad": NumberInt(39) },
+  {  "nombre": "Leroy Sané", "n_camiseta": NumberInt(57), "altura": NumberInt(193), "edad": NumberInt(40) },
+  {  "nombre": "Coutinho", "n_camiseta": NumberInt(69), "altura": NumberInt(178), "edad": NumberInt(21) },
+  {  "nombre": "De Ligt", "n_camiseta": NumberInt(81), "altura": NumberInt(170), "edad": NumberInt(20) }
 ]
 );
 
@@ -1000,49 +1000,49 @@ db.estadios.insertMany(
       {
         "nombre": "Estadio Allianz Arena",
         "ubicacion": "Munich, Alemania",       
-        "aforo": 31297,
+        "aforo": NumberInt(31297),
         "sitio_web": "fcbayern.com",
         "fundado": "30 de mayo de 2005"
       },
       {
         "nombre": "Gillette Stadium",
         "ubicacion": "Foxborough, Estados Unidos",
-        "aforo": 68756,
+        "aforo": NumberInt(68756),
         "sitio_web": "stadiumgillette.com",
         "fundado": "9 de septiembre de 2002"
       },
       {
         "nombre": "Estadio Olímpico de Atenas",
         "ubicacion": "Atenas, Grecia",
-        "aforo": 39088,
+        "aforo": NumberInt(39088),
         "sitio_web": "estadiumatenas.com",
         "fundado": "30 de julio de 2004"
       },
       {
         "nombre": "Estadio Olímpico de Múnich",
         "ubicacion": "Munich, alemania",
-        "aforo": 63062,
+        "aforo": NumberInt(63062),
         "sitio_web": "estadiumolimpicomunich.com",
         "fundado": "26 de mayo de 1972"
       },
       {
         "nombre": "Estadio Krestovski",
         "ubicacion": "San Petersburgo, Rusia",
-        "aforo": 70000,
+        "aforo": NumberInt(70000),
         "sitio_web": "estadiumKrestovski.com",
         "fundado": "22 de abril de 2017"
       },
       {
         "nombre": "Estadio Santiago Bernabéu",
         "ubicacion": "Madrid, España",
-        "aforo": 81044,
+        "aforo": NumberInt(81044),
         "sitio_web": "estadiumbernabeu.com",
         "fundado": "14 de diciembre de 1947"
       },
       {
         "nombre": "Estadio Camp Nou",
         "ubicacion": "Barcelona, España",
-        "aforo": 99354,
+        "aforo": NumberInt(99354),
         "sitio_web": "estadiumcampnou.com",
         "fundado": "24 de septiembre de 1957"
       }
