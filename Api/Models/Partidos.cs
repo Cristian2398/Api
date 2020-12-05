@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,8 @@ namespace Api.Models
 {
     public class Partidos
     {
-       public ObjectId Id { get; set; }
+        [BsonId]
+        public ObjectId Id { get; set; }
         public string inicio { get; set; }
         public string fin { get; set; }
         public string torneo { get; set; }
