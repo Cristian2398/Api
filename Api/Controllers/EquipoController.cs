@@ -25,8 +25,8 @@ namespace Api.Controllers
         public async Task<IActionResult> GetAllEquiposDetails(string id)
         {
             return Ok(await db.GetEquipoById(id));
-
         }
+
         [HttpPost]
         public async Task<IActionResult> CreateEquipo([FromBody] Equipo equipo)
         {
