@@ -12,6 +12,6 @@ namespace Api.Models
         [BsonId]
         public ObjectId Id { get; set; }
         public string edicion { get; set; }
-        public string fases { get; set; }
+        public Object fases { get; set; }
     }
 }
