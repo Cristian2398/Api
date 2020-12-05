@@ -7,15 +7,18 @@ using System.Threading.Tasks;
 
 namespace Api.Models
 {
-    public class Equipo
+    public class Plantillas
     {
+
         [BsonId]
         public ObjectId Id { get; set; }
         public string nombre_eq { get; set; }
-        public string entrenador { get; set; }
-        public string sitio_web { get; set; }
-        public string email { get; set; }
-        public string fundado { get; set; }
+        public string edicion_torneo { get; set; }
+        public string fase { get; set; }
+        public string grupo { get; set; }
+        public Object jugadores { get; set; }
+ 
+
 
     }
 }
