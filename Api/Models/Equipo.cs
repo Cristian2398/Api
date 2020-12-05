@@ -16,5 +16,6 @@ namespace Api.Models
         public string sitio_web { get; set; }
         public string email { get; set; }
         public string fundado { get; set; }
+
     }
 }
