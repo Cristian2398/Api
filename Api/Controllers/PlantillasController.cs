@@ -20,7 +20,27 @@ namespace Api.Controllers
         {
             return Ok(await db.GetAllPlantillas());
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetAllPlantillasDetails(string id)
+        {
+            return Ok(await db.GetPlantillasById(id));
 
-       
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreatePlantillas([FromBody] Plantillas plantillas)
+        {
+            if (plantillas == null)
+                return BadRequest();
+
+            if (plantillas.grupo == string.Empty)
+            {
+                ModelState.AddModelError("Name", "El Partido no esta");
+
+            }
+            await db.InsertPlantillas(plantillas);
+            return Created("created", true);
+        }
+
+
     }
 }

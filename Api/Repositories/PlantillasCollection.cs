@@ -26,14 +26,14 @@ namespace Api.Repositories
             return await Collection.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
 
-        public Task<Plantillas> GetPlantillasById(string id)
+        public async Task<Plantillas> GetPlantillasById(string id)
         {
-            throw new NotImplementedException();
+            return await Collection.FindAsync(new BsonDocument { { "_id", new ObjectId(id) } }).Result.FirstAsync();
         }
 
-        public Task InsertPlantillas(Plantillas plantillas)
+        public async Task InsertPlantillas(Plantillas plantillas)
         {
-            throw new NotImplementedException();
+         await Collection.InsertOneAsync(plantillas);
         }
 
         public Task UpdatePlantillas(Plantillas plantillas)
