@@ -25,8 +25,8 @@ namespace Api.Controllers
         public async Task<IActionResult> GetAllJugadorDetails(string id)
         {
             return Ok(await db.GetJugadorById(id));
-
         }
+
         [HttpPost]
         public async Task<IActionResult> CreateJugador([FromBody] Jugadores jugadores)
         {
@@ -36,7 +36,6 @@ namespace Api.Controllers
             if (jugadores.nombre == string.Empty)
             {
                 ModelState.AddModelError("Name", "El Jugador no esta");
-
             }
             await db.InsertJugador(jugadores);
             return Created("created", true);

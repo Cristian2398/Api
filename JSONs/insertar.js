@@ -1,6 +1,5 @@
 /*--------------------INSERTAR LOS PLANTILLA--------------------- */
 /*------------------------------------------------------------- */
-
 db.plantillas.insertMany(
   [
     {
@@ -365,7 +364,6 @@ db.jugadores.insertMany(
 
 /*--------------------INSERTAR LOS PARTIDOS-------------------- */
 /*------------------------------------------------------------- */
-
 db.partidos.insertMany(
   [
     {
@@ -973,7 +971,6 @@ db.partidos.insertMany(
 
 /*--------------------INSERTAR LOS ESTADIOS-------------------- */
 /*------------------------------------------------------------- */
-
 db.estadios.insertMany(
   [
     {
@@ -1032,7 +1029,6 @@ db.estadios.insertMany(
 
 /*------------INSERTAR LOS RESULTADOS DEL TORNEO-----------------*/
 /*---------------------------------------------------------------*/
-
 db.torneo.insert({
   "edicion": "Liga de Campeones 2020",
   "fases": [{
