@@ -18,7 +18,12 @@ namespace Api.Controllers
         private ITorneoCollections db = new TorneoCollection();
         public async Task<IActionResult> GetAllTorneo()
         {
-            return Ok(await db.GetAllTorneos());
+            var texto = await db.GetAllTorneos();
+
+            foreach (Torneo name in texto){
+                Console.WriteLine(name.edicion);
+            }
+            return Ok(texto);
         }
 
         [HttpGet("{id}")]
