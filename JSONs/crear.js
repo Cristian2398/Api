@@ -9,6 +9,7 @@ db.createCollection("torneo", {
             required: ["edicion", "fases"],
             "additionalProperties": false,
             properties: {
+                _id: { bsonType: "objectId" },
                 "edicion": { bsonType: "string" },
                 "fases": {
                     bsonType: ["array"],
@@ -56,8 +57,8 @@ db.createCollection("partidos", {
         $jsonSchema: {
             bsonType: "object",
             required: ["equipoLocal", "equipoVisitante"],
-            "additionalProperties": false,
             properties: {
+                _id: { bsonType: "objectId" },
                 "inicio": { bsonType: "string" },
                 "fin": { bsonType: "string" },
                 "torneo": { bsonType: "string" },
@@ -109,11 +110,14 @@ db.createCollection("partidos", {
                     uniqueItems: true,
                     additionalProperties: false,
                     items: {
-                        "nombre_equipo": { bsonType: "string" },
-                        "jugador": { bsonType: "string" },
-                        "minuto": { bsonType: "string" },
-                        "tipo_incidencia": { bsonType: "string" },
-                        "detalles": { bsonType: "string" },
+                        bsonType: ["object"],
+                        properties: {
+                            "nombre_equipo": { bsonType: "string" },
+                            "jugador": { bsonType: "string" },
+                            "minuto": { bsonType: "int" },
+                            "tipo_incidencia": { bsonType: "string" },
+                            "detalles": { bsonType: ["string", "int"] }
+                        }
                     }
                 }
 
@@ -129,6 +133,7 @@ db.createCollection("equipos", {
             required: ["nombre_eq", "entrenador", "sitio_web", "email", "fundado"],
             "additionalProperties": false,
             properties: {
+                _id: { bsonType: "objectId" },
                 "nombre_eq": { bsonType: "string" },
                 "entrenador": { bsonType: "string" },
                 "sitio_web": { bsonType: "string" },
@@ -155,11 +160,9 @@ db.createCollection("plantillas", {
                     bsonType: ["array"],
                     minItems: 1,
                     uniqueItems: true,
-                    additionalProperties: false,
                     items: {
                         bsonType: ["object"],
                         required: ["nombre", "n_camiseta", "altura", "edad"],
-                        additionalProperties: false,
                         properties: {
                             "nombre": { bsonType: "string" },
                             "n_camiseta": { bsonType: "int" },
@@ -180,6 +183,7 @@ db.createCollection("estadios", {
             required: ["nombre", "ubicacion", "aforo", "sitio_web", "fundado"],
             "additionalProperties": false,
             properties: {
+                _id: { bsonType: "objectId" },
                 "nombre": { bsonType: "string" },
                 "ubicacion": { bsonType: "string" },    
                 "aforo": { bsonType: "int" },
@@ -198,10 +202,11 @@ db.createCollection("jugadores", {
             required: ["nombre", "n_camiseta", "altura", "edad"],
             "additionalProperties": false,
             properties: {
+                _id: { bsonType: "objectId" },
                 "nombre": { bsonType: "string" },
-                "n_camiseta": { bsonType: "string" },
-                "altura": { bsonType: "string" },
-                "edad": { bsonType: "string" }
+                "n_camiseta": { bsonType: "int" },
+                "altura": { bsonType: "int" },
+                "edad": { bsonType: "int" }
             }
         }
     }
