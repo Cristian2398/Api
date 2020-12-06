@@ -1,7 +1,8 @@
 /*------------ CREAR BASE DE DATOS -----------------*/
 /*------------- Y LAS COLECCIONES-------------------*/
 
-use torneo_futbol;  
+use torneo_futbol;
+
 db.createCollection("torneo", {
     validator: {
         $jsonSchema: {
@@ -116,7 +117,7 @@ db.createCollection("partidos", {
                             "jugador": { bsonType: "string" },
                             "minuto": { bsonType: "int" },
                             "tipo_incidencia": { bsonType: "string" },
-                            "detalles": { bsonType: ["string", "int"] }
+                            "detalles": { bsonType: "string" }
                         }
                     }
                 }

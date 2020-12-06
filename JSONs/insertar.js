@@ -1,6 +1,5 @@
 /*--------------------INSERTAR LOS PLANTILLA--------------------- */
 /*------------------------------------------------------------- */
-
 db.plantillas.insertMany(
   [
     {
@@ -365,7 +364,6 @@ db.jugadores.insertMany(
 
 /*--------------------INSERTAR LOS PARTIDOS-------------------- */
 /*------------------------------------------------------------- */
-
 db.partidos.insertMany(
   [
     {
@@ -411,7 +409,7 @@ db.partidos.insertMany(
           "jugador": "Jan Vertonghen",
           "minuto": NumberInt(6),
           "tipo_incidencia": "gol",
-          "detalles": NumberInt(1)
+          "detalles": "1"
         }
       ]
     },
@@ -512,7 +510,7 @@ db.partidos.insertMany(
           "jugador": "David Silva",
           "minuto": NumberInt(36),
           "tipo_incidencia": "gol",
-          "detalles": NumberInt(1)
+          "detalles": "1"
         }
       ]
     },
@@ -559,7 +557,7 @@ db.partidos.insertMany(
           "jugador": "Bernardo Silva",
           "minuto": NumberInt(68),
           "tipo_incidencia": "gol",
-          "detalles": NumberInt(1)
+          "detalles": "1"
         }
       ]
     },
@@ -714,7 +712,7 @@ db.partidos.insertMany(
           "jugador": "Niklas Süle",
           "minuto": NumberInt(68),
           "tipo_incidencia": "gol",
-          "detalles": NumberInt(1)
+          "detalles": "1"
         }
       ]
     },
@@ -761,7 +759,7 @@ db.partidos.insertMany(
           "jugador": "Fabinho",
           "minuto": NumberInt(66),
           "tipo_incidencia": "gol",
-          "detalles": NumberInt(1)
+          "detalles": "1"
         }
       ]
     },
@@ -862,7 +860,7 @@ db.partidos.insertMany(
           "jugador": "De Ligt",
           "minuto": NumberInt(44),
           "tipo_incidencia": "autogol",
-          "detalles": NumberInt(1)
+          "detalles": "1"
         }
       ]
     },
@@ -909,7 +907,7 @@ db.partidos.insertMany(
           "jugador": "Neuer",
           "minuto": NumberInt(11),
           "tipo_incidencia": "gol",
-          "detalles": NumberInt(1)
+          "detalles": "1"
         }
       ]
     },
@@ -956,14 +954,14 @@ db.partidos.insertMany(
           "jugador": "Marco Reus",
           "minuto": NumberInt(12),
           "tipo_incidencia": "gol",
-          "detalles": NumberInt(1)
+          "detalles": "1"
         },
         {
           "nombre_equipo": "Tottenham",
           "jugador": "Marco Reus",
           "minuto": NumberInt(22),
           "tipo_incidencia": "gol",
-          "detalles": NumberInt(1)
+          "detalles": "1"
         }
       ]
     }
@@ -973,7 +971,6 @@ db.partidos.insertMany(
 
 /*--------------------INSERTAR LOS ESTADIOS-------------------- */
 /*------------------------------------------------------------- */
-
 db.estadios.insertMany(
   [
     {
@@ -1032,7 +1029,6 @@ db.estadios.insertMany(
 
 /*------------INSERTAR LOS RESULTADOS DEL TORNEO-----------------*/
 /*---------------------------------------------------------------*/
-
 db.torneo.insert({
   "edicion": "Liga de Campeones 2020",
   "fases": [{
