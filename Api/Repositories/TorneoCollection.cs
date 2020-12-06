@@ -17,7 +17,7 @@ namespace Api.Repositories
         public TorneoCollection()
         {
             //Va a traer los datos de la colleccion y los va a guardar en coleccion para interactuar con ella
-            Collection = _repository.db.GetCollection<Torneo>("torneo1");
+            Collection = _repository.db.GetCollection<Torneo>("torneo");
 
         }
         public async Task DeleteTorneo(string id)
