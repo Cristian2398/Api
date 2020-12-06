@@ -101,12 +101,3 @@
             ]
         }]
 }
-
-//Insert Nuevo Equipo
-{
-    "nombre_eq": "Atlético de Madrid ",
-        "entrenador": "Diego Simeone",
-            "sitio_web": "atleticodemadrid.com",
-                "email": "atletic@email.com",
-                    "fundado": "fundado el 26 de abril de 1903"
-}

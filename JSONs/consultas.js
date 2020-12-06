@@ -14,9 +14,8 @@ db.plantillas.aggregate([
 //2. Clasificación final en cada grupo.
 torneo = 'Liga de Campeones 2020';
 db.torneo.aggregate([
-    { $match: { 'edicion':torneo}},
-    { $group: { _id: "$ediciones"}
-    }
+    { $match: { 'edicion':torneo}}
+    
 ]).pretty();
 
 
@@ -70,55 +69,15 @@ db.partidos.find({
 /*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 //5. Ver la información de las incidencias de un jugador en un torneo, que incluya tipo de incidencia, minuto, equipo, etc.
 torneo = 'Liga de Campeones 2020';
-jugador_buscar = 'Jan Vertonghen';
+jugador_buscar = "Jan Vertonghen";
 db.partidos.aggregate([
     {$match:{$and:[
                 {$or:[
                     {'equipoVisitante.plantilla':jugador_buscar },
                     {'equipoLocal.plantilla':jugador_buscar}]},
-                {'torneo':torneo}
+                {'torneo':torneo},
+                {'incidencias.jugador':jugador_buscar}
     ]}},
-    {$project:{"incidencias_": {$filter: {input: "$incidencias",as: "list",cond: {
-                        $eq: ['$$list.jugador', jugador_buscar]
-                    }}}
-                }
-    },
-    {$group: { 
-        _id: "$incidencias_.incidencia"
-        } 
+    {$group: { _id: "$incidencias" } 
     }
 ]).pretty();
-
-
-
-
-
-// De esta forma se buscó la información para llenar las tablas de resultados
-/* equipo_buscar = "Atlético de Madrid ";
-equipo_buscar = "Barcelona";
-equipo_buscar = "Bayern de Múnich";
-equipo_buscar = "Chelsea";
-equipo_buscar = "Liverpool";
-equipo_buscar = "Manchester City";
-equipo_buscar = "Manchester United";
-equipo_buscar = "Nápoles";
-equipo_buscar = "Piemonte Calcio";
-equipo_buscar = "PSG";
-equipo_buscar = "Real Madrid"; */
-equipo_buscar = "Tottenham";
-torneo = 'Liga de Campeones 2020';
-db.partidos.aggregate([
-    { $match: { $or: [{'equipoVisitante.nombre':equipo_buscar },{'equipoLocal.nombre':equipo_buscar}]}},
-    { $match: { 'torneo':torneo}}
-    ,{$set: 
-        {'buscado_GF':
-            { $size:{$filter: {input: "$incidencias",as: "list",cond: {
-                        $and:[{$eq: ['$$list.nombre_equipo', equipo_buscar]},
-                            {$eq: ['$$list.tipo_incidencia', "gol"]}]}}}},
-        'contrario_GC':
-            { $size:{$filter: {input: "$incidencias",as: "list",cond: {
-                        $and:[{$ne: ['$$list.nombre_equipo', equipo_buscar]},
-                            {$eq: ['$$list.tipo_incidencia', "gol"]}]}}}}}},
-    {$project:{
-            busco: equipo_buscar, grupo: "$grupo",e_local: "$equipoLocal.nombre",e_visit: "$equipoVisitante.nombre",
-            bu_GF: "$bu_GF",co_GC: "$co_GC"}}]).pretty();
