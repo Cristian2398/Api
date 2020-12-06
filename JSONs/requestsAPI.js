@@ -91,4 +91,22 @@
 }
 
 /*------------INSERTAR LOS RESULTADOS DEL TORNEO-----------------*/
+//Insert Nuevo Torneo
+{
+    "edicion": "Liga de Campeones 2020",
+        "fases": [{
+            "nombre": "clasificacion_grupos",
+            "grupos": [
+                { "nombre": "a", "Posicion": 1, "Equipo": "Chelsea", "PG": 2, "PE": 0, "PP": 0, "GF": 2, "GC": 0, "GD": 2, "Puntos": 6 }
+            ]
+        }]
+}
 
+//Insert Nuevo Equipo
+{
+    "nombre_eq": "Atlético de Madrid ",
+        "entrenador": "Diego Simeone",
+            "sitio_web": "atleticodemadrid.com",
+                "email": "atletic@email.com",
+                    "fundado": "fundado el 26 de abril de 1903"
+}
