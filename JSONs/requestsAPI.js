@@ -1,5 +1,5 @@
 /*--------------------INSERTAR LOS PLANTILLA--------------------- */
-[{
+{
     "nombre_eq": "Real Popayán",
     "edicion_torneo": "Liga de Campeones 2021",
     "fase": "clasificacion_grupos",
@@ -13,82 +13,82 @@
         { "nombre": "Milan Škriniar", "n_camiseta": 66, "altura": 187, "edad": 36 },
         { "nombre": "Varane", "n_camiseta": 78, "altura": 200, "edad": 33 }
     ]
-}]
+}
 
 /*--------------------INSERTAR LOS EQUIPOS--------------------- */
-[{
+{
     "nombre_eq": "Real Popayán",
     "entrenador": "Ruben",
     "sitio_web": "RealPopayan.com",
     "email": "real_popayan@gmail.com",
     "fundado": "fundado el 10 de abril de 1983"
-}]
+}
 
 /*--------------------INSERTAR LOS JUGADORES--------------------- */
-[{
+{
     "nombre": "Mina",
     "n_camiseta": 2,
     "altura": 196,
     "edad": 25
-}]
+}
 
 /*--------------------INSERTAR LOS PARTIDOS-------------------- */
-[{
-    "inicio": "80/11/2020 8:00",
-    "fin": "80/11/2020 9:00",
-    "torneo": "Liga de Campeones 2021",
-    "fase": "clasificacion",
-    "grupo": "a",
-    "estadio": "Estadio Olímpico de Atenas",
-    "ubicacion": "Atenas, Grecia",
-    "arbitros": {
-      "principal": "Pedro",
-      "linea": "Simón",
-      "var": "Pedro"
-    },
-    "equipoLocal": {
-      "nombre": "Atlético de Madrid ",
-      "plantilla": [
-        "Oblak",
-        "N'Golo Kanté",
-        "Eriksen",
-        "Jordi Alba",
-        "Jan Vertonghen",
-        "Milan Škriniar",
-        "Varane"
-      ]
-    },
-    "equipoVisitante": {
-      "nombre": "Barcelona",
-      "plantilla": [
-        "Messi",
-        "Sergio Agüero",
-        "Aubameyang",
-        "Godín",
-        "Aymeric Laporte",
-        "Marquinhos",
-        "Daniel Parejo"
-      ]
-    },
-    "incidencias": [
-      {
-        "nombre_equipo": "Atlético de Madrid ",
-        "jugador": "Jan Vertonghen",
-        "minuto": NumberInt(6),
-        "tipo_incidencia": "gol",
-        "detalles": NumberInt(1)
-      }
+{
+  "inicio": "30/11/2020 8:00",
+  "fin": "30/11/2020 9:00",
+  "torneo": "Liga de Campeones 2021",
+  "fase": "clasificacion",
+  "grupo": "a",
+  "estadio": "Estadio Olímpico de Atenas",
+  "ubicacion": "Atenas, Grecia",
+  "arbitros": {
+    "principal": "Pedro",
+    "linea": "Simón",
+    "var": "Pedro"
+  },
+  "equipoLocal": {
+    "nombre": "Atlético de Madrid ",
+    "plantilla": [
+      "Oblak",
+      "N'Golo Kanté",
+      "Eriksen",
+      "Jordi Alba",
+      "Jan Vertonghen",
+      "Milan Škriniar",
+      "Varane"
     ]
-  }]
+  },
+  "equipoVisitante": {
+    "nombre": "Barcelona",
+    "plantilla": [
+      "Messi",
+      "Sergio Agüero",
+      "Aubameyang",
+      "Godín",
+      "Aymeric Laporte",
+      "Marquinhos",
+      "Daniel Parejo"
+    ]
+  },
+  "incidencias": [
+    {
+      "nombre_equipo": "Atlético de Madrid ",
+      "jugador": "Jan Vertonghen",
+      "minuto": 6,
+      "tipo_incidencia": "gol",
+      "detalles": "1"
+    }
+  ]
+}
 
 /*--------------------INSERTAR LOS ESTADIOS-------------------- */
-[{
+{
     "nombre": "Estadio Allianz Arena",
     "ubicacion": "Imtech Arena, Alemania",
     "aforo": 31207,
     "sitio_web": "imtech_arena.com",
     "fundado": "30 de mayo de 2005"
-}]
+}
 
 /*------------INSERTAR LOS RESULTADOS DEL TORNEO-----------------*/
 
