@@ -16,8 +16,10 @@ namespace Api.Controllers
     public class PlantillasController : Controller
     {
         private IPlantillasCollections db = new PlantillasCollection();
+
         public async Task<IActionResult> GetAllPlatillas()
         {
+            
             var result = await db.GetAllPlantillas();
 
             foreach (Plantillas name in result)

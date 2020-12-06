@@ -42,6 +42,8 @@ namespace Api.Repositories
         public async Task InsertTorneo(Torneo torneo)
         {
             await Collection.InsertOneAsync(torneo);
+             
+            
         }
 
         public async Task UpdateTorneo(Torneo torneo)
@@ -49,5 +51,6 @@ namespace Api.Repositories
             var filter = Builders<Torneo>.Filter.Eq(s => s.Id, torneo.Id);
             await Collection.ReplaceOneAsync(filter, torneo);
         }
+     
     }
 }

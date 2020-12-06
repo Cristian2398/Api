@@ -18,7 +18,15 @@ namespace Api.Controllers
         private IJugadoresCollections db = new JugadoresCollection();
         public async Task<IActionResult> GetAllJugador()
         {
-            return Ok(await db.GetAllJugador());
+
+            var result = await db.GetAllJugador();
+
+            foreach (Jugadores name in result)
+            {
+                Console.WriteLine(name.nombre);
+            }
+            return Ok(result);
+
         }
 
         [HttpGet("{id}")]

@@ -18,12 +18,10 @@ namespace Api.Controllers
         private ITorneoCollections db = new TorneoCollection();
         public async Task<IActionResult> GetAllTorneo()
         {
-            var texto = await db.GetAllTorneos();
+            var listTorneos = await db.GetAllTorneos();
+            
 
-            foreach (Torneo name in texto){
-                Console.WriteLine(name.edicion);
-            }
-            return Ok(texto);
+            return Ok(listTorneos);
         }
 
         [HttpGet("{id}")]
@@ -35,13 +33,17 @@ namespace Api.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateTorneo([FromBody] Torneo torneo)
         {
+            Console.WriteLine("^^^^^^^^^^^^^^^^^^^^");
+            Console.WriteLine(torneo.fases[0].nombre);
+            
+            Console.WriteLine("vvvvvvvvvvvvvvvvvvvvvv");
+
             if (torneo == null)
                 return BadRequest();
 
             if (torneo.edicion == string.Empty)
             {
-                ModelState.AddModelError("Name", "El torneo no esta");
-
+                ModelState.AddModelError("Name", "El Partido no esta");
             }
             await db.InsertTorneo(torneo);
             return Created("created", true);
