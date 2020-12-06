@@ -19,11 +19,16 @@ namespace Api.Controllers
         public async Task<IActionResult> GetAllTorneo()
         {
             var texto = await db.GetAllTorneos();
+            var edicion1="";
 
             foreach (Torneo name in texto){
                 Console.WriteLine(name.edicion);
+                edicion1 = name.edicion+", "+name.fases.ToString();
+
             }
-            return Ok(texto);
+
+
+            return Ok(edicion1);
         }
 
         [HttpGet("{id}")]
