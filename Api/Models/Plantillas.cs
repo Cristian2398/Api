@@ -16,9 +16,8 @@ namespace Api.Models
         public string edicion_torneo { get; set; }
         public string fase { get; set; }
         public string grupo { get; set; }
-        public Object jugadores { get; set; }
+        public List<Jugadores> jugadores { get; set; }
  
-
-
     }
+
 }
