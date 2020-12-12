@@ -93,7 +93,7 @@
 /*------------INSERTAR LOS RESULTADOS DEL TORNEO-----------------*/
 //Insert Nuevo Torneo
 {
-    "edicion": "Liga de Campeones 2020",
+    "edicion": "Liga de Campeones 2021",
         "fases": [{
             "nombre": "clasificacion_grupos",
             "grupos": [
@@ -104,20 +104,21 @@
 
 //Insert Nuevo Equipo
 {
-    "nombre_eq": "Atlético de Madrid ",
-        "entrenador": "Diego Simeone",
-            "sitio_web": "atleticodemadrid.com",
-                "email": "atletic@email.com",
-                    "fundado": "fundado el 26 de abril de 1903"
+    "nombre_eq": "Atlético de unimayor",
+    "entrenador": "Diego Simeone",
+    "sitio_web": "atleticodemadrid.com",
+    "email": "atletic@email.com",
+    "fundado": "fundado el 26 de abril de 1903"
 }
+
 // Traer un equipo y su plantilla GetId Http
-https://localhost:44382/api/plantillas/5fcc49049263f7407cd36a85
+https://localhost:44382/api/plantillas/id
 // Traer un equipo por Id
-https://localhost:44382/api/equipo/5fcc49049263f7407cd36a91
+https://localhost:44382/api/equipo/id
 // Traer un Jugador por Id
-https://localhost:44382/api/jugadores/5fcc49049263f7407cd36a9d
+https://localhost:44382/api/jugadores/id
 //traer un partido por I d
-https://localhost:44382/api/partidos/5fcc49069263f7407cd36af1
+https://localhost:44382/api/partidos/id
 //Traer un toreno por Id
-https://localhost:44382/api/torneo/5fcc49069263f7407cd36b04
+https://localhost:44382/api/torneo/id
 

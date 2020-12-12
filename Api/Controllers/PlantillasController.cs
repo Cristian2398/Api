@@ -19,16 +19,7 @@ namespace Api.Controllers
 
         public async Task<IActionResult> GetAllPlatillas()
         {
-            
             var result = await db.GetAllPlantillas();
-
-            foreach (Plantillas name in result)
-            {
-                Console.WriteLine(name.nombre_eq);
-                Console.WriteLine(name.jugadores);
-                
-
-            }
             return Ok(result);
         }
         [HttpGet("{id}")]

@@ -19,8 +19,6 @@ namespace Api.Controllers
         public async Task<IActionResult> GetAllTorneo()
         {
             var listTorneos = await db.GetAllTorneos();
-            
-
             return Ok(listTorneos);
         }
 
@@ -33,10 +31,6 @@ namespace Api.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateTorneo([FromBody] Torneo torneo)
         {
-            Console.WriteLine("^^^^^^^^^^^^^^^^^^^^");
-            Console.WriteLine(torneo.fases[0].nombre);
-            
-            Console.WriteLine("vvvvvvvvvvvvvvvvvvvvvv");
 
             if (torneo == null)
                 return BadRequest();

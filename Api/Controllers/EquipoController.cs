@@ -18,14 +18,7 @@ namespace Api.Controllers
         private IEquiposCollections db = new EquipoCollection();
         public async Task<IActionResult> GetAllEquipos()
         {
-
-
             var result = await db.GetAllEquipos();
-
-            foreach (Equipo name in result)
-            {
-                Console.WriteLine(name.nombre_eq);
-            }
             return Ok(result);
             
         }
